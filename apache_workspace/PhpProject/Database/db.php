@@ -108,6 +108,8 @@ function getOneCom($comId) {
         $stmt = conn()->prepare("
         SELECT * FROM commentaire WHERE id = ? AND Suppression IS NULL");
         $stmt->execute([$comId]);
+        $values = $stmt->fetch();
+        return $values;
         conn()->commit();
         
     } catch(Exception $e) {

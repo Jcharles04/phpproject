@@ -63,7 +63,7 @@ if (!$_SESSION["user"]) {
 							<div class='like'><?php echo $donnees['Like']; ?></div>
 							<div class='reponse'><?php echo $donnees['ReplyTo_id']; ?></div>
 							<?php if ($_SESSION['user']['id'] == $donnees['User_id']): ?>
-									<form action='./modifyCom.php' method="POST">
+									<form action='./modifyCom.php' method="GET">
 										<input id="comId" name="comId" type="hidden" value="<?=$donnees['id']?>">
 										<input class='modify' type='submit' value='Modifier'/>
 									</form>
