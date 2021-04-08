@@ -1,0 +1,38 @@
+header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background-color: #F99E8B;
+}
+
+.link {
+	text-decoration: none;
+	display: flex;
+}
+
+.one {
+	height: 75px;
+	background-color: #F8C471 ;
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	width: 60%; 
+	height: 100px;
+	background-color: #f1f07f;
+	margin-bottom: 20px;
+}
+
+.card .userId{
+	display: none;
+}
+
+.card .comId{
+	display: none;
+}
+
+.card .img {
+	height: 100px;
+	width: 100px;
+}

@@ -1,0 +1,247 @@
+[06-Apr-2021 07:55:58 UTC] In ctor é accent à
+[06-Apr-2021 07:55:58 UTC] Array
+(
+    [U_LOGIN] => admin
+    [0] => admin
+    [U_NAME] => Admin
+    [1] => Admin
+    [U_PASS] => 09fa2eae89b0e642de71e6996bdca1bb
+    [2] => 09fa2eae89b0e642de71e6996bdca1bb
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 07:55:58 UTC] Array
+(
+    [U_LOGIN] => astrid
+    [0] => astrid
+    [U_NAME] => Astrid
+    [1] => Astrid
+    [U_PASS] => 77daed671a034f15c09149cdb8edd046
+    [2] => 77daed671a034f15c09149cdb8edd046
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 07:55:58 UTC] Array
+(
+    [U_LOGIN] => julien
+    [0] => julien
+    [U_NAME] => AHPC-SERVICES
+    [1] => AHPC-SERVICES
+    [U_PASS] => d156e7ef26630c2810118159bf2c888e
+    [2] => d156e7ef26630c2810118159bf2c888e
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 07:55:58 UTC] Array
+(
+    [U_LOGIN] => paul
+    [0] => paul
+    [U_NAME] => Paul
+    [1] => Paul
+    [U_PASS] => 22001f08066efa28626edd3719c4bef4
+    [2] => 22001f08066efa28626edd3719c4bef4
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 08:05:28 UTC] In ctor é accent à
+[06-Apr-2021 08:05:28 UTC] Array
+(
+    [U_LOGIN] => admin
+    [0] => admin
+    [U_NAME] => Admin
+    [1] => Admin
+    [U_PASS] => 09fa2eae89b0e642de71e6996bdca1bb
+    [2] => 09fa2eae89b0e642de71e6996bdca1bb
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 08:05:28 UTC] Array
+(
+    [U_LOGIN] => astrid
+    [0] => astrid
+    [U_NAME] => Astrid
+    [1] => Astrid
+    [U_PASS] => 77daed671a034f15c09149cdb8edd046
+    [2] => 77daed671a034f15c09149cdb8edd046
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 08:05:28 UTC] Array
+(
+    [U_LOGIN] => julien
+    [0] => julien
+    [U_NAME] => AHPC-SERVICES
+    [1] => AHPC-SERVICES
+    [U_PASS] => d156e7ef26630c2810118159bf2c888e
+    [2] => d156e7ef26630c2810118159bf2c888e
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 08:05:28 UTC] Array
+(
+    [U_LOGIN] => paul
+    [0] => paul
+    [U_NAME] => Paul
+    [1] => Paul
+    [U_PASS] => 22001f08066efa28626edd3719c4bef4
+    [2] => 22001f08066efa28626edd3719c4bef4
+    [U_PRIVILEGES] => 0
+    [3] => 0
+)
+
+[06-Apr-2021 08:56:05 UTC] In ctor é accent à
+[06-Apr-2021 08:56:05 UTC] PHP Fatal error:  Uncaught PDOException: PDO::__construct(): The server requested authentication method unknown to the client [caching_sha2_password] in C:\Users\julien.charles\Downloads\apache_workspace\PhpProject\classes\IndexPage.php:20
+Stack trace:
+#0 C:\Users\julien.charles\Downloads\apache_workspace\PhpProject\classes\IndexPage.php(20): PDO->__construct('mysql:host=loca...', 'formanosonline', 'Giband2018')
+#1 C:\Users\julien.charles\Downloads\apache_workspace\PhpProject\index.php(6): classes\IndexPage->__construct()
+#2 {main}
+
+Next PDOException: SQLSTATE[HY000] [2054] The server requested authentication method unknown to the client in C:\Users\julien.charles\Downloads\apache_workspace\PhpProject\classes\IndexPage.php:20
+Stack trace:
+#0 C:\Users\julien.charles\Downloads\apache_workspace\PhpProject\classes\IndexPage.php(20): PDO->__construct('mysql:host=loca...', 'formanosonline', 'Giband2018')
+#1 C:\Users\julien.charles\Downloads\apache_workspace\PhpProject\index.php(6): classes\IndexPage->__construct()
+#2 {main}
+  thrown in C:\Users\julien.charles\Downloads\apache_workspace\PhpProject\classes\IndexPage.php on line 20
+[06-Apr-2021 08:57:58 UTC] In ctor é accent à
+[06-Apr-2021 08:57:58 UTC] Error
+[06-Apr-2021 08:58:05 UTC] Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'groupomania.utilisateur' doesn't exist
+)
+
+[06-Apr-2021 09:20:22 UTC] Login with a@a / aaa
+[06-Apr-2021 09:24:08 UTC] postCom with  / 
+[06-Apr-2021 09:24:08 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to postCom() must be of the type string, null given, called in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\postComVerify.php on line 15 and defined in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\Database\dbcom.php:15
+Stack trace:
+#0 C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\postComVerify.php(15): postCom(NULL, '')
+#1 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\Database\dbcom.php on line 15
+[06-Apr-2021 09:25:44 UTC] postCom with  / 
+[06-Apr-2021 09:25:48 UTC] postCom with  / 
+[06-Apr-2021 09:32:05 UTC] postCom with  / 
+[06-Apr-2021 09:33:07 UTC] postCom with  / 
+[06-Apr-2021 09:45:12 UTC] postCom with  / 
+[06-Apr-2021 09:57:00 UTC] postCom with aaa / 
+[06-Apr-2021 09:59:59 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject/Database/dbcom.php' (include_path='.;C:\php\pear') in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\postComVerify.php on line 5
+[06-Apr-2021 09:59:59 UTC] PHP Stack trace:
+[06-Apr-2021 09:59:59 UTC] PHP   1. {main}() C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\postComVerify.php:0
+[06-Apr-2021 10:00:41 UTC] postCom with aaa / 
+[06-Apr-2021 10:01:18 UTC] postCom with aaa / 
+[06-Apr-2021 10:01:51 UTC] postCom with aaa / 
+[06-Apr-2021 10:02:47 UTC] postCom with aaa / 
+[06-Apr-2021 10:03:58 UTC] postCom with aaa / 
+[06-Apr-2021 10:05:50 UTC] postCom with aaa / 
+[06-Apr-2021 10:06:15 UTC] postCom with aaa / 
+[06-Apr-2021 10:11:18 UTC] postCom with aaa / 
+[06-Apr-2021 12:36:11 UTC] postCom with  / 
+[06-Apr-2021 13:00:21 UTC] postCom with  / 
+[06-Apr-2021 13:01:01 UTC] postCom with  / 
+[06-Apr-2021 13:02:45 UTC] postCom with  / 
+[06-Apr-2021 13:41:27 UTC] postCom with  / 
+[06-Apr-2021 14:06:54 UTC] postCom with  / 
+[06-Apr-2021 14:22:15 UTC] postCom with  / 
+[06-Apr-2021 14:22:24 UTC] postCom with  / 
+[06-Apr-2021 15:00:11 UTC] postCom with  / 606c77730b1bd2.78012859.jpg
+[06-Apr-2021 15:01:51 UTC] postCom with  / 606c77dab5e691.63866751.jpg
+[06-Apr-2021 15:09:23 UTC] postCom with  / 606c79a00e6d27.13904415.jpg
+[06-Apr-2021 15:21:42 UTC] PHP Parse error:  syntax error, unexpected '$tmpName' (T_VARIABLE), expecting ',' or ';' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 36
+[06-Apr-2021 15:21:43 UTC] PHP Parse error:  syntax error, unexpected '$tmpName' (T_VARIABLE), expecting ',' or ';' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 36
+[06-Apr-2021 15:34:18 UTC] postCom with  / 606c7f79186a46.41691468.jpg
+[06-Apr-2021 15:51:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:40
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 40
+[06-Apr-2021 15:51:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:40
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 40
+[07-Apr-2021 07:15:36 UTC] Login with a@a / aaa
+[07-Apr-2021 07:24:00 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 42
+[07-Apr-2021 07:24:00 UTC] PHP Parse error:  syntax error, unexpected '}' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 42
+[07-Apr-2021 07:24:14 UTC] PHP Fatal error:  Cannot use try without catch or finally in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 40
+[07-Apr-2021 07:24:23 UTC] PHP Fatal error:  Cannot use try without catch or finally in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 40
+[07-Apr-2021 07:24:26 UTC] PHP Fatal error:  Cannot use try without catch or finally in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 40
+[07-Apr-2021 07:26:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getCom() in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 41
+[07-Apr-2021 07:26:34 UTC] PHP Stack trace:
+[07-Apr-2021 07:26:34 UTC] PHP   1. {main}() C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:0
+[07-Apr-2021 07:26:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getCom() in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 41
+[07-Apr-2021 07:27:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getCom() in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 41
+[07-Apr-2021 07:27:20 UTC] PHP Stack trace:
+[07-Apr-2021 07:27:20 UTC] PHP   1. {main}() C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:0
+[07-Apr-2021 07:48:29 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 70
+[07-Apr-2021 07:48:30 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 70
+[07-Apr-2021 07:49:31 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 67
+[07-Apr-2021 07:49:32 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 67
+[07-Apr-2021 07:56:46 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 66
+[07-Apr-2021 07:56:47 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 66
+[07-Apr-2021 08:00:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:48
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 48
+[07-Apr-2021 08:00:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:48
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 48
+[07-Apr-2021 08:01:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:48
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 48
+[07-Apr-2021 08:01:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:48
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 48
+[07-Apr-2021 08:01:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function closeCursor() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:61
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 61
+[07-Apr-2021 08:01:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function closeCursor() on null in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:61
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 61
+[07-Apr-2021 08:02:31 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 63
+[07-Apr-2021 08:04:20 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 53
+[07-Apr-2021 08:04:21 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 53
+[07-Apr-2021 08:12:46 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 53
+[07-Apr-2021 08:12:50 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 53
+[07-Apr-2021 08:12:55 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 53
+[07-Apr-2021 08:13:11 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 53
+[07-Apr-2021 08:38:21 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\apputils/../__app__.php' (include_path='.;C:\php\pear') in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\apputils\__app__.php on line 2
+[07-Apr-2021 08:38:21 UTC] PHP Stack trace:
+[07-Apr-2021 08:38:21 UTC] PHP   1. {main}() C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:0
+[07-Apr-2021 08:38:21 UTC] PHP   2. require_once() C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php:8
+[07-Apr-2021 08:38:21 UTC] PHP   3. require_once() C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\apputils\Util.php:6
+[07-Apr-2021 08:56:33 UTC] PHP Parse error:  syntax error, unexpected '<' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 57
+[07-Apr-2021 09:01:30 UTC] PHP Parse error:  syntax error, unexpected '?' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 57
+[07-Apr-2021 09:01:31 UTC] PHP Parse error:  syntax error, unexpected '?' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 57
+[07-Apr-2021 12:45:37 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 84
+[07-Apr-2021 12:45:55 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 73
+[07-Apr-2021 12:53:01 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\index.php on line 70
+[07-Apr-2021 13:06:16 UTC] Login with a@a / aaa
+[07-Apr-2021 13:16:00 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting '{' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\Database\db.php on line 108
+[07-Apr-2021 13:16:00 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting '{' in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\Database\db.php on line 108
+[07-Apr-2021 13:29:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getOneCom() in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\modifyCom.php:14
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\modifyCom.php on line 14
+[07-Apr-2021 13:32:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getOneCom() in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\modifyCom.php:14
+Stack trace:
+#0 {main}
+  thrown in C:\Users\julien.charles\Documents\GroupamiaPHP\apache_workspace\PhpProject\modifyCom.php on line 14

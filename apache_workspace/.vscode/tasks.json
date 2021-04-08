@@ -1,0 +1,77 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "start apache",
+            "type": "shell",
+            "command": "D:\\Apache24-VC15-x64\\bin\\httpd.exe",
+            "args": [
+                "-f",
+                "${workspaceFolder}\\apacheconf\\apache\\httpd.php.7.2.conf",
+                "-e",
+                "debug"
+            ],
+            "options": {
+                "env": {
+                    "PATH": "%PATH%;D:\\PHP\\php-7.2-x64-VC15-TS",
+                    "HTTPD_SRVROOT": "D:/Apache24-VC15-x64",
+                    "HTTPD_WS_ROOT": "${workspaceFolder}",
+                    "HTTPD_SSL_CERTS_DIR": "D:/cert",
+                    "HTTPD_PHP_ROOT": "D:/PHP/php-7.2-x64-VC15-TS",
+                    "HTTPD_HTTP_PORT": "8000",
+                    "HTTPD_HTTPS_PORT": "8043"
+                }
+            },
+            "isBackground": true,
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "stop apache",
+            "type": "shell",
+            "command": "taskkill",
+            "args": [
+                "-F",
+                "-IM",
+                "httpd.exe"
+            ]
+        },
+        {
+            "label": "tail php_errors.log",
+            "type": "shell",
+            "command": "Get-Content",
+            "args": [
+                ".\\apacheconf\\logs\\php_errors.log",
+                "-Wait",
+                "-Tail",
+                "30",
+                "-encoding",
+                "utf8"
+            ],
+            "isBackground": true
+        },
+        {
+            "label": "start xdebug session",
+            "type": "shell",
+            "command": "start",
+            "args": [
+                "http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234"
+            ],
+            "dependsOrder": "parallel",
+            "problemMatcher": []
+        },
+        {
+            "label": "stop xdebug session",
+            "type": "shell",
+            "command": "start",
+            "args": [
+                "http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP"
+            ]
+        }
+    ]
+}

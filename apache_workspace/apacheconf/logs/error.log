@@ -1,0 +1,945 @@
+[Tue Apr 06 09:55:35.180563 2021] [ssl:info] [pid 20092:tid 448] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 09:55:35.194558 2021] [ssl:warn] [pid 20092:tid 448] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 09:55:35.197557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module actions_module from D:/Program Files/Apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 09:55:35.197557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module alias_module from D:/Program Files/Apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 09:55:35.197557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/Program Files/Apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 09:55:35.198557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module asis_module from D:/Program Files/Apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 09:55:35.198557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/Program Files/Apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 09:55:35.198557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module authn_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 09:55:35.198557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module authn_file_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 09:55:35.199557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module authz_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 09:55:35.199557 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 09:55:35.200558 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module authz_host_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 09:55:35.200558 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module authz_user_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 09:55:35.201565 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module autoindex_module from D:/Program Files/Apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 09:55:35.201565 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module cgi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 09:55:35.202556 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module dir_module from D:/Program Files/Apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 09:55:35.202556 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module env_module from D:/Program Files/Apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 09:55:35.203556 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module include_module from D:/Program Files/Apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 09:55:35.204556 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module info_module from D:/Program Files/Apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 09:55:35.204556 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module isapi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 09:55:35.204556 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module log_config_module from D:/Program Files/Apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 09:55:35.205555 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module mime_module from D:/Program Files/Apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 09:55:35.205555 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module negotiation_module from D:/Program Files/Apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 09:55:35.205555 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module rewrite_module from D:/Program Files/Apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 09:55:35.206554 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module setenvif_module from D:/Program Files/Apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 09:55:35.206554 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/Program Files/Apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 09:55:35.206554 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module ssl_module from D:/Program Files/Apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 09:55:35.207554 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module status_module from D:/Program Files/Apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 09:55:35.210553 2021] [so:debug] [pid 20092:tid 448] mod_so.c(266): AH01575: loaded module php7_module from D:/Program Files/php-7.2/php7apache2_4.dll
+[Tue Apr 06 09:55:35.262797 2021] [core:warn] [pid 20092:tid 448] AH00098: pid file D:/Program Files/Apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 06 09:55:35.263797 2021] [ssl:info] [pid 20092:tid 448] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 09:55:35.276792 2021] [ssl:warn] [pid 20092:tid 448] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 09:55:35.293787 2021] [mpm_winnt:notice] [pid 20092:tid 448] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.19 configured -- resuming normal operations
+[Tue Apr 06 09:55:35.293787 2021] [mpm_winnt:notice] [pid 20092:tid 448] AH00456: Server built: May 29 2019 21:57:40
+[Tue Apr 06 09:55:35.293787 2021] [core:notice] [pid 20092:tid 448] AH00094: Command line: 'D:\\Program Files\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/Program Files/Apache24-VC15-x64 -f D:\\Utilisateurs\\Julien\\Documents\\Dev\\VS.Code\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Tue Apr 06 09:55:35.299790 2021] [mpm_winnt:notice] [pid 20092:tid 448] AH00418: Parent: Created child process 4388
+[Tue Apr 06 09:55:35.603708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module actions_module from D:/Program Files/Apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 09:55:35.603708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module alias_module from D:/Program Files/Apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 09:55:35.604711 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/Program Files/Apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 09:55:35.604711 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module asis_module from D:/Program Files/Apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 09:55:35.604711 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/Program Files/Apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 09:55:35.605710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authn_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 09:55:35.605710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authn_file_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 09:55:35.606713 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 09:55:35.606713 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 09:55:35.607710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_host_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 09:55:35.607710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_user_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 09:55:35.608710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module autoindex_module from D:/Program Files/Apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 09:55:35.609710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module cgi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 09:55:35.609710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module dir_module from D:/Program Files/Apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 09:55:35.609710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module env_module from D:/Program Files/Apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 09:55:35.610722 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module include_module from D:/Program Files/Apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 09:55:35.610722 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module info_module from D:/Program Files/Apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 09:55:35.610722 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module isapi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 09:55:35.611708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module log_config_module from D:/Program Files/Apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 09:55:35.611708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module mime_module from D:/Program Files/Apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 09:55:35.611708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module negotiation_module from D:/Program Files/Apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 09:55:35.612708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module rewrite_module from D:/Program Files/Apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 09:55:35.612708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module setenvif_module from D:/Program Files/Apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 09:55:35.612708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/Program Files/Apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 09:55:35.613708 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module ssl_module from D:/Program Files/Apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 09:55:35.614707 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module status_module from D:/Program Files/Apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 09:55:35.617712 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module php7_module from D:/Program Files/php-7.2/php7apache2_4.dll
+[Tue Apr 06 09:55:35.647697 2021] [ssl:info] [pid 4388:tid 484] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 09:55:35.660712 2021] [ssl:warn] [pid 4388:tid 484] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 09:55:35.662710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module actions_module from D:/Program Files/Apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 09:55:35.662710 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module alias_module from D:/Program Files/Apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 09:55:35.663709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/Program Files/Apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 09:55:35.663709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module asis_module from D:/Program Files/Apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 09:55:35.663709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/Program Files/Apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 09:55:35.664709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authn_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 09:55:35.664709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authn_file_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 09:55:35.664709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 09:55:35.665709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 09:55:35.665709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_host_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 09:55:35.665709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module authz_user_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 09:55:35.666709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module autoindex_module from D:/Program Files/Apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 09:55:35.666709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module cgi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 09:55:35.666709 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module dir_module from D:/Program Files/Apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 09:55:35.667702 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module env_module from D:/Program Files/Apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 09:55:35.667702 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module include_module from D:/Program Files/Apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 09:55:35.667702 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module info_module from D:/Program Files/Apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 09:55:35.668700 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module isapi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 09:55:35.668700 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module log_config_module from D:/Program Files/Apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 09:55:35.668700 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module mime_module from D:/Program Files/Apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 09:55:35.669700 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module negotiation_module from D:/Program Files/Apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 09:55:35.669700 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module rewrite_module from D:/Program Files/Apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 09:55:35.669700 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module setenvif_module from D:/Program Files/Apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 09:55:35.670690 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/Program Files/Apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 09:55:35.670690 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module ssl_module from D:/Program Files/Apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 09:55:35.670690 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module status_module from D:/Program Files/Apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 09:55:35.673689 2021] [so:debug] [pid 4388:tid 484] mod_so.c(266): AH01575: loaded module php7_module from D:/Program Files/php-7.2/php7apache2_4.dll
+[Tue Apr 06 09:55:35.718744 2021] [ssl:info] [pid 4388:tid 484] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 09:55:35.730743 2021] [ssl:warn] [pid 4388:tid 484] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 09:55:35.749724 2021] [mpm_winnt:notice] [pid 4388:tid 484] AH00354: Child: Starting 64 worker threads.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:crit] [pid 4388:tid 484] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:warn] [pid 4388:tid 1324] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:warn] [pid 4388:tid 1300] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:warn] [pid 4388:tid 1200] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:warn] [pid 4388:tid 600] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:error] [pid 4388:tid 1300] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:notice] [pid 4388:tid 1300] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:error] [pid 4388:tid 1324] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:notice] [pid 4388:tid 1324] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:error] [pid 4388:tid 600] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:notice] [pid 4388:tid 600] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:error] [pid 4388:tid 1200] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 09:56:18.723155 2021] [mpm_winnt:notice] [pid 4388:tid 1200] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 09:56:20.740439 2021] [mpm_winnt:notice] [pid 4388:tid 484] AH00364: Child: All worker threads have exited.
+[Tue Apr 06 10:05:24.492757 2021] [ssl:info] [pid 31524:tid 456] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:05:24.507742 2021] [ssl:warn] [pid 31524:tid 456] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:05:24.510755 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module actions_module from D:/Program Files/Apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:05:24.510755 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module alias_module from D:/Program Files/Apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:05:24.510755 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/Program Files/Apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:05:24.511737 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module asis_module from D:/Program Files/Apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:05:24.511737 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/Program Files/Apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:05:24.512738 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module authn_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:05:24.512738 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module authn_file_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:05:24.513761 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module authz_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:05:24.513761 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:05:24.513761 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module authz_host_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:05:24.514756 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module authz_user_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:05:24.514756 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module autoindex_module from D:/Program Files/Apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:05:24.514756 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module cgi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:05:24.515755 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module dir_module from D:/Program Files/Apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:05:24.515755 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module env_module from D:/Program Files/Apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:05:24.516737 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module include_module from D:/Program Files/Apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:05:24.516737 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module info_module from D:/Program Files/Apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:05:24.516737 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module isapi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:05:24.517755 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module log_config_module from D:/Program Files/Apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:05:24.517755 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module mime_module from D:/Program Files/Apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:05:24.518736 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module negotiation_module from D:/Program Files/Apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:05:24.518736 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module rewrite_module from D:/Program Files/Apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:05:24.518736 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module setenvif_module from D:/Program Files/Apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:05:24.519752 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/Program Files/Apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:05:24.519752 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module ssl_module from D:/Program Files/Apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:05:24.520747 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module status_module from D:/Program Files/Apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:05:24.524747 2021] [so:debug] [pid 31524:tid 456] mod_so.c(266): AH01575: loaded module php7_module from D:/Program Files/php-7.2/php7apache2_4.dll
+[Tue Apr 06 10:05:24.576936 2021] [core:warn] [pid 31524:tid 456] AH00098: pid file D:/Program Files/Apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 06 10:05:24.578940 2021] [ssl:info] [pid 31524:tid 456] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:05:24.590931 2021] [ssl:warn] [pid 31524:tid 456] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:05:24.607926 2021] [mpm_winnt:notice] [pid 31524:tid 456] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.19 configured -- resuming normal operations
+[Tue Apr 06 10:05:24.607926 2021] [mpm_winnt:notice] [pid 31524:tid 456] AH00456: Server built: May 29 2019 21:57:40
+[Tue Apr 06 10:05:24.608925 2021] [core:notice] [pid 31524:tid 456] AH00094: Command line: 'D:\\Program Files\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/Program Files/Apache24-VC15-x64 -f D:\\Utilisateurs\\Julien\\Documents\\Dev\\VS.Code\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Tue Apr 06 10:05:24.614929 2021] [mpm_winnt:notice] [pid 31524:tid 456] AH00418: Parent: Created child process 2776
+[Tue Apr 06 10:05:24.918885 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module actions_module from D:/Program Files/Apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:05:24.919884 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module alias_module from D:/Program Files/Apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:05:24.919884 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/Program Files/Apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:05:24.920871 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module asis_module from D:/Program Files/Apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:05:24.920871 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/Program Files/Apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:05:24.920871 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authn_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:05:24.921870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authn_file_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:05:24.921870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:05:24.921870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:05:24.922870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_host_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:05:24.922870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_user_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:05:24.922870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module autoindex_module from D:/Program Files/Apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:05:24.923870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module cgi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:05:24.923870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module dir_module from D:/Program Files/Apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:05:24.923870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module env_module from D:/Program Files/Apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:05:24.924870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module include_module from D:/Program Files/Apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:05:24.924870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module info_module from D:/Program Files/Apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:05:24.924870 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module isapi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:05:24.925884 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module log_config_module from D:/Program Files/Apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:05:24.925884 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module mime_module from D:/Program Files/Apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:05:24.925884 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module negotiation_module from D:/Program Files/Apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:05:24.926899 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module rewrite_module from D:/Program Files/Apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:05:24.926899 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module setenvif_module from D:/Program Files/Apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:05:24.926899 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/Program Files/Apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:05:24.927898 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module ssl_module from D:/Program Files/Apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:05:24.928898 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module status_module from D:/Program Files/Apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:05:24.930895 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module php7_module from D:/Program Files/php-7.2/php7apache2_4.dll
+[Tue Apr 06 10:05:24.971513 2021] [ssl:info] [pid 2776:tid 476] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:05:24.984508 2021] [ssl:warn] [pid 2776:tid 476] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:05:24.986508 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module actions_module from D:/Program Files/Apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:05:24.986508 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module alias_module from D:/Program Files/Apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:05:24.987499 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/Program Files/Apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:05:24.987499 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module asis_module from D:/Program Files/Apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:05:24.987499 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/Program Files/Apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:05:24.988507 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authn_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:05:24.988507 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authn_file_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:05:24.988507 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_core_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:05:24.989508 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:05:24.989508 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_host_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:05:24.989508 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module authz_user_module from D:/Program Files/Apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:05:24.990507 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module autoindex_module from D:/Program Files/Apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:05:24.990507 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module cgi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:05:24.990507 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module dir_module from D:/Program Files/Apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:05:24.991506 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module env_module from D:/Program Files/Apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:05:24.991506 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module include_module from D:/Program Files/Apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:05:24.991506 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module info_module from D:/Program Files/Apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:05:24.992506 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module isapi_module from D:/Program Files/Apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:05:24.992506 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module log_config_module from D:/Program Files/Apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:05:24.992506 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module mime_module from D:/Program Files/Apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:05:24.993503 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module negotiation_module from D:/Program Files/Apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:05:24.993503 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module rewrite_module from D:/Program Files/Apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:05:24.993503 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module setenvif_module from D:/Program Files/Apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:05:24.994502 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/Program Files/Apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:05:24.995493 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module ssl_module from D:/Program Files/Apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:05:24.995493 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module status_module from D:/Program Files/Apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:05:24.998502 2021] [so:debug] [pid 2776:tid 476] mod_so.c(266): AH01575: loaded module php7_module from D:/Program Files/php-7.2/php7apache2_4.dll
+[Tue Apr 06 10:05:25.032990 2021] [ssl:info] [pid 2776:tid 476] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:05:25.045998 2021] [ssl:warn] [pid 2776:tid 476] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:05:25.064979 2021] [mpm_winnt:notice] [pid 2776:tid 476] AH00354: Child: Starting 64 worker threads.
+[Tue Apr 06 10:05:58.076868 2021] [mpm_winnt:crit] [pid 2776:tid 476] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Tue Apr 06 10:05:58.076868 2021] [mpm_winnt:warn] [pid 2776:tid 604] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 10:05:58.076868 2021] [mpm_winnt:warn] [pid 2776:tid 612] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 10:05:58.077869 2021] [mpm_winnt:error] [pid 2776:tid 604] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 10:05:58.077869 2021] [mpm_winnt:notice] [pid 2776:tid 604] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 10:05:58.077869 2021] [mpm_winnt:error] [pid 2776:tid 612] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 10:05:58.077869 2021] [mpm_winnt:notice] [pid 2776:tid 612] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 10:06:00.089020 2021] [mpm_winnt:notice] [pid 2776:tid 476] AH00364: Child: All worker threads have exited.
+[Tue Apr 06 10:51:49.200607 2021] [ssl:info] [pid 7648:tid 480] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:51:49.219596 2021] [ssl:warn] [pid 7648:tid 480] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:51:49.222596 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:51:49.222596 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:51:49.223610 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:51:49.223610 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:51:49.224604 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:51:49.224604 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:51:49.224604 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:51:49.225603 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:51:49.225603 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:51:49.226602 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:51:49.226602 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:51:49.226602 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:51:49.227610 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:51:49.227610 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:51:49.227610 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:51:49.228606 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:51:49.230591 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:51:49.230591 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:51:49.231589 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:51:49.232589 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:51:49.232589 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:51:49.233588 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:51:49.233588 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:51:49.233588 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:51:49.234586 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:51:49.234586 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:51:49.238587 2021] [so:debug] [pid 7648:tid 480] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 10:51:49.248579 2021] [core:warn] [pid 7648:tid 480] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 06 10:51:49.250577 2021] [ssl:info] [pid 7648:tid 480] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:51:49.266567 2021] [ssl:warn] [pid 7648:tid 480] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:54:00.302764 2021] [mpm_winnt:notice] [pid 7648:tid 480] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.31 configured -- resuming normal operations
+[Tue Apr 06 10:54:00.302764 2021] [mpm_winnt:notice] [pid 7648:tid 480] AH00456: Server built: May 29 2019 21:57:40
+[Tue Apr 06 10:54:00.302764 2021] [core:notice] [pid 7648:tid 480] AH00094: Command line: 'D:\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/apache24-VC15-x64 -f C:\\Users\\julien.charles\\Downloads\\apache_workspace\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Tue Apr 06 10:54:00.318740 2021] [mpm_winnt:notice] [pid 7648:tid 480] AH00418: Parent: Created child process 12868
+[Tue Apr 06 10:54:00.674531 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:54:00.675524 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:54:00.675524 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:54:00.675524 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:54:00.676524 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:54:00.676524 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:54:00.676524 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:54:00.676524 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:54:00.677535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:54:00.677535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:54:00.677535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:54:00.678535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:54:00.678535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:54:00.678535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:54:00.679520 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:54:00.679520 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:54:00.679520 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:54:00.679520 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:54:00.680535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:54:00.680535 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:54:00.681533 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:54:00.681533 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:54:00.681533 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:54:00.681533 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:54:00.682532 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:54:00.683532 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:54:00.686515 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 10:54:00.696520 2021] [ssl:info] [pid 12868:tid 452] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:54:00.711515 2021] [ssl:warn] [pid 12868:tid 452] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:54:00.714509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:54:00.714509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:54:00.715505 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:54:00.715505 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:54:00.715505 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:54:00.715505 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:54:00.716512 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:54:00.716512 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:54:00.716512 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:54:00.717511 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:54:00.717511 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:54:00.717511 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:54:00.718512 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:54:00.718512 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:54:00.718512 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:54:00.718512 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:54:00.719510 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:54:00.719510 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:54:00.719510 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:54:00.720509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:54:00.720509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:54:00.720509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:54:00.721509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:54:00.721509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:54:00.721509 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:54:00.722508 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:54:00.724504 2021] [so:debug] [pid 12868:tid 452] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 10:54:00.732503 2021] [ssl:info] [pid 12868:tid 452] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:54:00.746489 2021] [ssl:warn] [pid 12868:tid 452] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:54:00.767477 2021] [mpm_winnt:notice] [pid 12868:tid 452] AH00354: Child: Starting 64 worker threads.
+[Tue Apr 06 10:55:46.746037 2021] [ssl:info] [pid 9988:tid 488] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:55:46.764027 2021] [ssl:warn] [pid 9988:tid 488] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:55:46.768026 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:55:46.768026 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:55:46.768026 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:55:46.769025 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:55:46.769025 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:55:46.770026 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:55:46.770026 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:55:46.771023 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:55:46.771023 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:55:46.771023 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:55:46.772023 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:55:46.772023 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:55:46.772023 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:55:46.773022 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:55:46.773022 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:55:46.773022 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:55:46.774021 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:55:46.774021 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:55:46.774021 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:55:46.775020 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:55:46.775020 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:55:46.775020 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:55:46.776020 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:55:46.776020 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:55:46.776020 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:55:46.777019 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:55:46.780018 2021] [so:debug] [pid 9988:tid 488] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 10:55:46.790013 2021] [core:warn] [pid 9988:tid 488] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 06 10:55:46.791012 2021] [ssl:info] [pid 9988:tid 488] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:55:46.808001 2021] [ssl:warn] [pid 9988:tid 488] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:55:46.833988 2021] [mpm_winnt:notice] [pid 9988:tid 488] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.31 configured -- resuming normal operations
+[Tue Apr 06 10:55:46.833988 2021] [mpm_winnt:notice] [pid 9988:tid 488] AH00456: Server built: May 29 2019 21:57:40
+[Tue Apr 06 10:55:46.833988 2021] [core:notice] [pid 9988:tid 488] AH00094: Command line: 'D:\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/apache24-VC15-x64 -f C:\\Users\\julien.charles\\Downloads\\apache_workspace\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Tue Apr 06 10:55:46.840982 2021] [mpm_winnt:notice] [pid 9988:tid 488] AH00418: Parent: Created child process 14876
+[Tue Apr 06 10:55:47.195773 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:55:47.196783 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:55:47.196783 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:55:47.197786 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:55:47.197786 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:55:47.197786 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:55:47.198772 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:55:47.198772 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:55:47.199779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:55:47.199779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:55:47.199779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:55:47.200771 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:55:47.200771 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:55:47.200771 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:55:47.201769 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:55:47.201769 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:55:47.201769 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:55:47.202769 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:55:47.202769 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:55:47.202769 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:55:47.203768 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:55:47.203768 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:55:47.203768 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:55:47.204768 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:55:47.204768 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:55:47.205767 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:55:47.208783 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 10:55:47.217792 2021] [ssl:info] [pid 14876:tid 192] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:55:47.232773 2021] [ssl:warn] [pid 14876:tid 192] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:55:47.234781 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 10:55:47.234781 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 10:55:47.235781 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 10:55:47.235781 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 10:55:47.235781 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 10:55:47.236780 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 10:55:47.236780 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 10:55:47.236780 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 10:55:47.237779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 10:55:47.237779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 10:55:47.238779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 10:55:47.238779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 10:55:47.238779 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 10:55:47.239787 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 10:55:47.239787 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 10:55:47.239787 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 10:55:47.240804 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 10:55:47.240804 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 10:55:47.240804 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 10:55:47.241811 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 10:55:47.241811 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 10:55:47.241811 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 10:55:47.242809 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 10:55:47.242809 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 10:55:47.242809 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 10:55:47.243802 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 10:55:47.246800 2021] [so:debug] [pid 14876:tid 192] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 10:55:47.253807 2021] [ssl:info] [pid 14876:tid 192] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 10:55:47.268798 2021] [ssl:warn] [pid 14876:tid 192] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 10:55:47.289775 2021] [mpm_winnt:notice] [pid 14876:tid 192] AH00354: Child: Starting 64 worker threads.
+[Tue Apr 06 11:19:35.158298 2021] [ssl:info] [pid 8768:tid 460] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:19:35.176289 2021] [ssl:warn] [pid 8768:tid 460] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:19:35.179287 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 11:19:35.180286 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 11:19:35.181286 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 11:19:35.182290 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 11:19:35.182290 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 11:19:35.182290 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 11:19:35.183284 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 11:19:35.183284 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 11:19:35.183284 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 11:19:35.184283 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 11:19:35.184283 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 11:19:35.184283 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 11:19:35.185283 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 11:19:35.185283 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 11:19:35.185283 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 11:19:35.185283 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 11:19:35.186282 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 11:19:35.186282 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 11:19:35.186282 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 11:19:35.188282 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 11:19:35.189281 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 11:19:35.189281 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 11:19:35.189281 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 11:19:35.192279 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 11:19:35.193279 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 11:19:35.193279 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 11:19:35.196276 2021] [so:debug] [pid 8768:tid 460] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 11:19:35.203272 2021] [core:warn] [pid 8768:tid 460] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 06 11:19:35.206271 2021] [ssl:info] [pid 8768:tid 460] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:19:35.224259 2021] [ssl:warn] [pid 8768:tid 460] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:19:35.243249 2021] [mpm_winnt:notice] [pid 8768:tid 460] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.31 configured -- resuming normal operations
+[Tue Apr 06 11:19:35.243249 2021] [mpm_winnt:notice] [pid 8768:tid 460] AH00456: Server built: May 29 2019 21:57:40
+[Tue Apr 06 11:19:35.243249 2021] [core:notice] [pid 8768:tid 460] AH00094: Command line: 'D:\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/apache24-VC15-x64 -f C:\\Users\\julien.charles\\Documents\\GroupamiaPHP\\apache_workspace\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Tue Apr 06 11:19:35.249245 2021] [mpm_winnt:notice] [pid 8768:tid 460] AH00418: Parent: Created child process 10396
+[Tue Apr 06 11:19:35.611049 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 11:19:35.612033 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 11:19:35.613032 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 11:19:35.613032 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 11:19:35.613032 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 11:19:35.614032 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 11:19:35.614032 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 11:19:35.614032 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 11:19:35.615031 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 11:19:35.615031 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 11:19:35.615031 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 11:19:35.616031 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 11:19:35.616031 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 11:19:35.616031 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 11:19:35.617030 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 11:19:35.617030 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 11:19:35.617030 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 11:19:35.618029 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 11:19:35.618029 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 11:19:35.618029 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 11:19:35.619029 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 11:19:35.619029 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 11:19:35.619029 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 11:19:35.620028 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 11:19:35.620028 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 11:19:35.621028 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 11:19:35.624026 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 11:19:35.634020 2021] [ssl:info] [pid 10396:tid 484] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:19:35.650010 2021] [ssl:warn] [pid 10396:tid 484] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:19:35.652009 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 11:19:35.653009 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 11:19:35.653009 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 11:19:35.653009 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 11:19:35.653009 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 11:19:35.654008 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 11:19:35.654008 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 11:19:35.655008 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 11:19:35.655008 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 11:19:35.655008 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 11:19:35.656007 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 11:19:35.656007 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 11:19:35.656007 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 11:19:35.657006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 11:19:35.657006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 11:19:35.657006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 11:19:35.657006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 11:19:35.658006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 11:19:35.658006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 11:19:35.658006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 11:19:35.659005 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 11:19:35.659005 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 11:19:35.660006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 11:19:35.660006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 11:19:35.660006 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 11:19:35.661004 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 11:19:35.663002 2021] [so:debug] [pid 10396:tid 484] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 11:19:35.670998 2021] [ssl:info] [pid 10396:tid 484] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:19:35.685989 2021] [ssl:warn] [pid 10396:tid 484] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:19:35.707854 2021] [mpm_winnt:notice] [pid 10396:tid 484] AH00354: Child: Starting 64 worker threads.
+[Tue Apr 06 11:31:27.023522 2021] [ssl:info] [pid 16376:tid 464] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:31:27.041519 2021] [ssl:warn] [pid 16376:tid 464] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:31:27.043516 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 11:31:27.044506 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 11:31:27.044506 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 11:31:27.044506 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 11:31:27.045504 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 11:31:27.045504 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 11:31:27.045504 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 11:31:27.045504 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 11:31:27.046504 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 11:31:27.046504 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 11:31:27.046504 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 11:31:27.047503 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 11:31:27.047503 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 11:31:27.048503 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 11:31:27.048503 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 11:31:27.048503 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 11:31:27.049503 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 11:31:27.049503 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 11:31:27.050502 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 11:31:27.050502 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 11:31:27.050502 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 11:31:27.051502 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 11:31:27.051502 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 11:31:27.052519 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 11:31:27.052519 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 11:31:27.053499 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 11:31:27.056497 2021] [so:debug] [pid 16376:tid 464] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 11:31:27.065536 2021] [core:warn] [pid 16376:tid 464] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Apr 06 11:31:27.066535 2021] [ssl:info] [pid 16376:tid 464] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:31:27.082525 2021] [ssl:warn] [pid 16376:tid 464] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:31:27.101927 2021] [mpm_winnt:notice] [pid 16376:tid 464] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.31 configured -- resuming normal operations
+[Tue Apr 06 11:31:27.101927 2021] [mpm_winnt:notice] [pid 16376:tid 464] AH00456: Server built: May 29 2019 21:57:40
+[Tue Apr 06 11:31:27.101927 2021] [core:notice] [pid 16376:tid 464] AH00094: Command line: 'D:\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/apache24-VC15-x64 -f C:\\Users\\julien.charles\\Documents\\GroupamiaPHP\\apache_workspace\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Tue Apr 06 11:31:27.107923 2021] [mpm_winnt:notice] [pid 16376:tid 464] AH00418: Parent: Created child process 6048
+[Tue Apr 06 11:31:27.461432 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 11:31:27.462431 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 11:31:27.463132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 11:31:27.463132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 11:31:27.463132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 11:31:27.463132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 11:31:27.464145 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 11:31:27.464145 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 11:31:27.465134 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 11:31:27.465134 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 11:31:27.465134 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 11:31:27.466143 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 11:31:27.466143 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 11:31:27.466143 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 11:31:27.466143 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 11:31:27.467143 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 11:31:27.467143 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 11:31:27.468132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 11:31:27.468132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 11:31:27.468132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 11:31:27.468132 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 11:31:27.469131 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 11:31:27.469131 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 11:31:27.469131 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 11:31:27.470130 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 11:31:27.470130 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 11:31:27.473599 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 11:31:27.483596 2021] [ssl:info] [pid 6048:tid 496] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:31:27.498588 2021] [ssl:warn] [pid 6048:tid 496] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:31:27.500587 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Tue Apr 06 11:31:27.500587 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Tue Apr 06 11:31:27.501586 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Tue Apr 06 11:31:27.501586 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Tue Apr 06 11:31:27.501586 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Tue Apr 06 11:31:27.502570 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Tue Apr 06 11:31:27.502570 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Tue Apr 06 11:31:27.502570 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Tue Apr 06 11:31:27.502570 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Tue Apr 06 11:31:27.503586 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Tue Apr 06 11:31:27.503586 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Tue Apr 06 11:31:27.503586 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Tue Apr 06 11:31:27.504583 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Tue Apr 06 11:31:27.504583 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Tue Apr 06 11:31:27.504583 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Tue Apr 06 11:31:27.505572 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Tue Apr 06 11:31:27.505572 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Tue Apr 06 11:31:27.505572 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Tue Apr 06 11:31:27.505572 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Tue Apr 06 11:31:27.506583 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Tue Apr 06 11:31:27.506583 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Tue Apr 06 11:31:27.506583 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Tue Apr 06 11:31:27.507581 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Tue Apr 06 11:31:27.507581 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Tue Apr 06 11:31:27.507581 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Tue Apr 06 11:31:27.508581 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Tue Apr 06 11:31:27.511302 2021] [so:debug] [pid 6048:tid 496] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Tue Apr 06 11:31:27.518445 2021] [ssl:info] [pid 6048:tid 496] AH01883: Init: Initialized OpenSSL library
+[Tue Apr 06 11:31:27.533440 2021] [ssl:warn] [pid 6048:tid 496] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Tue Apr 06 11:31:27.552543 2021] [mpm_winnt:notice] [pid 6048:tid 496] AH00354: Child: Starting 64 worker threads.
+[Tue Apr 06 17:58:28.755796 2021] [mpm_winnt:crit] [pid 6048:tid 496] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Tue Apr 06 17:58:28.755796 2021] [mpm_winnt:warn] [pid 6048:tid 576] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 17:58:28.755796 2021] [mpm_winnt:warn] [pid 6048:tid 1636] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Tue Apr 06 17:58:28.755796 2021] [mpm_winnt:error] [pid 6048:tid 576] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 17:58:28.756795 2021] [mpm_winnt:notice] [pid 6048:tid 576] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 17:58:28.756795 2021] [mpm_winnt:error] [pid 6048:tid 1636] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Tue Apr 06 17:58:28.756795 2021] [mpm_winnt:notice] [pid 6048:tid 1636] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Tue Apr 06 17:58:30.775200 2021] [mpm_winnt:notice] [pid 6048:tid 496] AH00364: Child: All worker threads have exited.
+[Wed Apr 07 09:13:17.396465 2021] [ssl:info] [pid 2464:tid 388] AH01883: Init: Initialized OpenSSL library
+[Wed Apr 07 09:13:17.419412 2021] [ssl:warn] [pid 2464:tid 388] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 07 09:13:17.422405 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Wed Apr 07 09:13:17.423403 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Wed Apr 07 09:13:17.423403 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Wed Apr 07 09:13:17.424400 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Wed Apr 07 09:13:17.424400 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Wed Apr 07 09:13:17.424400 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Wed Apr 07 09:13:17.425398 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Wed Apr 07 09:13:17.425398 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Wed Apr 07 09:13:17.426396 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Wed Apr 07 09:13:17.426396 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Wed Apr 07 09:13:17.427394 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Wed Apr 07 09:13:17.428393 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Wed Apr 07 09:13:17.429390 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Wed Apr 07 09:13:17.429390 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Wed Apr 07 09:13:17.429390 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Wed Apr 07 09:13:17.430387 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Wed Apr 07 09:13:17.431385 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Wed Apr 07 09:13:17.431385 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Wed Apr 07 09:13:17.432382 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Wed Apr 07 09:13:17.432382 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Wed Apr 07 09:13:17.432382 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Wed Apr 07 09:13:17.433380 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Wed Apr 07 09:13:17.433380 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Wed Apr 07 09:13:17.433380 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Wed Apr 07 09:13:17.434378 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Wed Apr 07 09:13:17.434378 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Wed Apr 07 09:13:17.437371 2021] [so:debug] [pid 2464:tid 388] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Wed Apr 07 09:13:17.446352 2021] [core:warn] [pid 2464:tid 388] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Apr 07 09:13:17.447349 2021] [ssl:info] [pid 2464:tid 388] AH01883: Init: Initialized OpenSSL library
+[Wed Apr 07 09:13:17.463313 2021] [ssl:warn] [pid 2464:tid 388] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 07 09:13:58.780833 2021] [mpm_winnt:notice] [pid 2464:tid 388] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.31 configured -- resuming normal operations
+[Wed Apr 07 09:13:58.780833 2021] [mpm_winnt:notice] [pid 2464:tid 388] AH00456: Server built: May 29 2019 21:57:40
+[Wed Apr 07 09:13:58.780833 2021] [core:notice] [pid 2464:tid 388] AH00094: Command line: 'D:\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/apache24-VC15-x64 -f C:\\Users\\julien.charles\\Documents\\GroupamiaPHP\\apache_workspace\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Wed Apr 07 09:13:58.791793 2021] [mpm_winnt:notice] [pid 2464:tid 388] AH00418: Parent: Created child process 13768
+[Wed Apr 07 09:13:59.269281 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Wed Apr 07 09:13:59.270289 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Wed Apr 07 09:13:59.270650 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Wed Apr 07 09:13:59.270993 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Wed Apr 07 09:13:59.271353 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Wed Apr 07 09:13:59.271698 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Wed Apr 07 09:13:59.272082 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Wed Apr 07 09:13:59.272387 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Wed Apr 07 09:13:59.272387 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Wed Apr 07 09:13:59.272387 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Wed Apr 07 09:13:59.273397 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Wed Apr 07 09:13:59.273397 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Wed Apr 07 09:13:59.274395 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Wed Apr 07 09:13:59.274395 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Wed Apr 07 09:13:59.275140 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Wed Apr 07 09:13:59.275140 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Wed Apr 07 09:13:59.275830 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Wed Apr 07 09:13:59.276196 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Wed Apr 07 09:13:59.276561 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Wed Apr 07 09:13:59.276922 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Wed Apr 07 09:13:59.277265 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Wed Apr 07 09:13:59.277615 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Wed Apr 07 09:13:59.277984 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Wed Apr 07 09:13:59.278381 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Wed Apr 07 09:13:59.278749 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Wed Apr 07 09:13:59.279701 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Wed Apr 07 09:13:59.282103 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Wed Apr 07 09:13:59.294075 2021] [ssl:info] [pid 13768:tid 484] AH01883: Init: Initialized OpenSSL library
+[Wed Apr 07 09:13:59.309043 2021] [ssl:warn] [pid 13768:tid 484] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 07 09:13:59.311037 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Wed Apr 07 09:13:59.311808 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Wed Apr 07 09:13:59.311808 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Wed Apr 07 09:13:59.311808 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Wed Apr 07 09:13:59.312809 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Wed Apr 07 09:13:59.312809 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Wed Apr 07 09:13:59.312809 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Wed Apr 07 09:13:59.313806 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Wed Apr 07 09:13:59.313806 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Wed Apr 07 09:13:59.313806 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Wed Apr 07 09:13:59.314804 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Wed Apr 07 09:13:59.315397 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Wed Apr 07 09:13:59.315889 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Wed Apr 07 09:13:59.316261 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Wed Apr 07 09:13:59.316622 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Wed Apr 07 09:13:59.316996 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Wed Apr 07 09:13:59.317358 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Wed Apr 07 09:13:59.317721 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Wed Apr 07 09:13:59.318034 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Wed Apr 07 09:13:59.318034 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Wed Apr 07 09:13:59.318034 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Wed Apr 07 09:13:59.319045 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Wed Apr 07 09:13:59.319045 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Wed Apr 07 09:13:59.319045 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Wed Apr 07 09:13:59.320042 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Wed Apr 07 09:13:59.320042 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Wed Apr 07 09:13:59.323040 2021] [so:debug] [pid 13768:tid 484] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Wed Apr 07 09:13:59.331106 2021] [ssl:info] [pid 13768:tid 484] AH01883: Init: Initialized OpenSSL library
+[Wed Apr 07 09:13:59.346071 2021] [ssl:warn] [pid 13768:tid 484] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Wed Apr 07 09:13:59.366416 2021] [mpm_winnt:notice] [pid 13768:tid 484] AH00354: Child: Starting 64 worker threads.
+1617780410.236946: There was a problem sending 179 bytes on socket 1256: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte.
+
+[Wed Apr 07 10:38:45.594693 2021] [core:error] [pid 13768:tid 1124] (20024)The given path is misformatted or contained invalid characters: [client ::1:65465] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 10:40:05.620874 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:65478] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 10:40:05.796461 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:65477] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:05:07.400216 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:49792] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:05:08.382827 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:49791] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:05:08.486766 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:49792] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:05:09.239509 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:49792] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:05:09.359890 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:49791] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:06:01.716312 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:49814] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:06:01.933047 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:49813] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:06:02.600665 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:49814] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:06:02.726995 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:49813] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:13:15.522621 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50068] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:13:15.645143 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50068] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:13:16.369935 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:49998] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:13:16.538989 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50068] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:13:53.434074 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50080] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:13:53.604522 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50079] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:13:54.298692 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50080] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:13:54.415561 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50079] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:13:55.573358 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50079] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:13:55.736199 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50079] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:15:54.112135 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50104] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:15:54.264524 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50104] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:16:25.055612 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50110] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:16:25.210323 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50110] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:17:51.363955 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50122] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:17:51.546032 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50122] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:17:53.326786 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50122] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:17:53.485150 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50122] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:18:17.222438 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50131] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:18:17.409647 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50132] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:18:46.865458 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50138] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:18:47.047459 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50138] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:18:48.914461 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50137] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:18:49.109324 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50138] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_STOP
+[Wed Apr 07 11:18:49.801138 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50137] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:18:50.011348 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50138] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:19:46.139440 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50154] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:19:46.316865 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50154] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:21:09.539194 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50200] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:21:09.750190 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50201] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:21:50.866900 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50235] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:21:51.068749 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50235] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:24:03.565340 2021] [core:error] [pid 13768:tid 1116] (20024)The given path is misformatted or contained invalid characters: [client ::1:50335] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 11:24:03.720198 2021] [core:error] [pid 13768:tid 1104] (20024)The given path is misformatted or contained invalid characters: [client ::1:50336] AH00127: Cannot map GET /PhpProject/upload/http%3A//localhost%3A8080/images/piment.jpg1617091853979.jpg HTTP/1.1 to file, referer: http://localhost:8000/PhpProject/?XDEBUG_SESSION_START=1234
+[Wed Apr 07 12:08:05.700633 2021] [php7:error] [pid 13768:tid 1116] [client ::1:56203] script 'C:/Users/julien.charles/Documents/GroupamiaPHP/apache_workspace/PhpProject/modifyCom.php' not found or unable to stat, referer: http://localhost:8000/PhpProject/
+[Wed Apr 07 15:49:11.543926 2021] [mpm_winnt:crit] [pid 13768:tid 484] AH02538: Child: Parent process exited abruptly. Child process is ending
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:warn] [pid 13768:tid 1560] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:warn] [pid 13768:tid 1544] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:warn] [pid 13768:tid 612] (OS 995)L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:error] [pid 13768:tid 1560] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:notice] [pid 13768:tid 1560] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:error] [pid 13768:tid 1544] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:notice] [pid 13768:tid 1544] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:error] [pid 13768:tid 612] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00337: Child: Encountered too many AcceptEx faults accepting client connections. Possible causes: dynamic address renewal, or incompatible VPN or firewall software. 
+[Wed Apr 07 15:49:11.544926 2021] [mpm_winnt:notice] [pid 13768:tid 612] (OS 10038)Une opération a été tentée sur autre chose qu’un socket.  : AH00338: winnt_mpm: falling back to 'AcceptFilter none'.
+[Wed Apr 07 15:49:13.567484 2021] [mpm_winnt:notice] [pid 13768:tid 484] AH00364: Child: All worker threads have exited.
+[Thu Apr 08 09:23:15.218612 2021] [ssl:info] [pid 8496:tid 584] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:23:19.265090 2021] [ssl:warn] [pid 8496:tid 584] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:23:19.268086 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Thu Apr 08 09:23:19.268086 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Thu Apr 08 09:23:19.269085 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Thu Apr 08 09:23:19.269085 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Thu Apr 08 09:23:19.269085 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Thu Apr 08 09:23:19.270085 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Thu Apr 08 09:23:19.270085 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Thu Apr 08 09:23:19.270085 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Thu Apr 08 09:23:19.271084 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Thu Apr 08 09:23:19.271084 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Thu Apr 08 09:23:19.271084 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Thu Apr 08 09:23:19.272084 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Thu Apr 08 09:23:19.272084 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Thu Apr 08 09:23:19.272084 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Thu Apr 08 09:23:19.272084 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Thu Apr 08 09:23:19.273083 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Thu Apr 08 09:23:19.273083 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Thu Apr 08 09:23:19.273083 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Thu Apr 08 09:23:19.274083 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Thu Apr 08 09:23:19.274083 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Thu Apr 08 09:23:19.275082 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Thu Apr 08 09:23:19.275082 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Thu Apr 08 09:23:19.276082 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Thu Apr 08 09:23:19.276082 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Thu Apr 08 09:23:19.276082 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Thu Apr 08 09:23:19.277081 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Thu Apr 08 09:23:19.280080 2021] [so:debug] [pid 8496:tid 584] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Thu Apr 08 09:23:19.287077 2021] [core:warn] [pid 8496:tid 584] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Apr 08 09:23:19.288076 2021] [ssl:info] [pid 8496:tid 584] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:23:19.304066 2021] [ssl:warn] [pid 8496:tid 584] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:27:26.035603 2021] [ssl:info] [pid 14440:tid 460] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:27:26.053572 2021] [ssl:warn] [pid 14440:tid 460] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:27:26.055588 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Thu Apr 08 09:27:26.056571 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Thu Apr 08 09:27:26.056571 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Thu Apr 08 09:27:26.057570 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Thu Apr 08 09:27:26.057570 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Thu Apr 08 09:27:26.058580 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Thu Apr 08 09:27:26.058580 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Thu Apr 08 09:27:26.059570 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Thu Apr 08 09:27:26.059570 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Thu Apr 08 09:27:26.060569 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Thu Apr 08 09:27:26.060569 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Thu Apr 08 09:27:26.061579 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Thu Apr 08 09:27:26.061579 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Thu Apr 08 09:27:26.062585 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Thu Apr 08 09:27:26.062585 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Thu Apr 08 09:27:26.063567 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Thu Apr 08 09:27:26.063567 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Thu Apr 08 09:27:26.065566 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Thu Apr 08 09:27:26.065566 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Thu Apr 08 09:27:26.066565 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Thu Apr 08 09:27:26.066565 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Thu Apr 08 09:27:26.066565 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Thu Apr 08 09:27:26.067564 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Thu Apr 08 09:27:26.067564 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Thu Apr 08 09:27:26.067564 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Thu Apr 08 09:27:26.068564 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Thu Apr 08 09:27:26.071563 2021] [so:debug] [pid 14440:tid 460] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Thu Apr 08 09:27:26.080556 2021] [core:warn] [pid 14440:tid 460] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Apr 08 09:27:26.082555 2021] [ssl:info] [pid 14440:tid 460] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:27:26.097547 2021] [ssl:warn] [pid 14440:tid 460] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:30:41.884560 2021] [ssl:info] [pid 4028:tid 476] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:30:41.901552 2021] [ssl:warn] [pid 4028:tid 476] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:30:41.904550 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Thu Apr 08 09:30:41.904550 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Thu Apr 08 09:30:41.904550 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Thu Apr 08 09:30:41.905550 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Thu Apr 08 09:30:41.905550 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Thu Apr 08 09:30:41.905550 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Thu Apr 08 09:30:41.906547 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Thu Apr 08 09:30:41.906547 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Thu Apr 08 09:30:41.906547 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Thu Apr 08 09:30:41.907546 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Thu Apr 08 09:30:41.907546 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Thu Apr 08 09:30:41.907546 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Thu Apr 08 09:30:41.908546 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Thu Apr 08 09:30:41.908546 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Thu Apr 08 09:30:41.908546 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Thu Apr 08 09:30:41.910545 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Thu Apr 08 09:30:41.911544 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Thu Apr 08 09:30:41.911544 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Thu Apr 08 09:30:41.913543 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Thu Apr 08 09:30:41.913543 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Thu Apr 08 09:30:41.914541 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Thu Apr 08 09:30:41.914541 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Thu Apr 08 09:30:41.914541 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Thu Apr 08 09:30:41.915542 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Thu Apr 08 09:30:41.915542 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Thu Apr 08 09:30:41.915542 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Thu Apr 08 09:30:41.918539 2021] [so:debug] [pid 4028:tid 476] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Thu Apr 08 09:30:41.925535 2021] [core:warn] [pid 4028:tid 476] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Apr 08 09:30:41.927535 2021] [ssl:info] [pid 4028:tid 476] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:30:41.943524 2021] [ssl:warn] [pid 4028:tid 476] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:32:32.963181 2021] [mpm_winnt:notice] [pid 4028:tid 476] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.2.31 configured -- resuming normal operations
+[Thu Apr 08 09:32:32.963181 2021] [mpm_winnt:notice] [pid 4028:tid 476] AH00456: Server built: May 29 2019 21:57:40
+[Thu Apr 08 09:32:32.963181 2021] [core:notice] [pid 4028:tid 476] AH00094: Command line: 'D:\\Apache24-VC15-x64\\bin\\httpd.exe -d D:/apache24-VC15-x64 -f C:\\Users\\julien.charles\\Documents\\GroupamiaPHP\\apache_workspace\\apacheconf\\apache\\httpd.php.7.2.conf -e debug'
+[Thu Apr 08 09:32:32.994160 2021] [mpm_winnt:notice] [pid 4028:tid 476] AH00418: Parent: Created child process 5468
+[Thu Apr 08 09:32:33.378934 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Thu Apr 08 09:32:33.380932 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Thu Apr 08 09:32:33.381931 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Thu Apr 08 09:32:33.382931 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Thu Apr 08 09:32:33.382931 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Thu Apr 08 09:32:33.383931 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Thu Apr 08 09:32:33.384934 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Thu Apr 08 09:32:33.384934 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Thu Apr 08 09:32:33.385935 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Thu Apr 08 09:32:33.386934 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Thu Apr 08 09:32:33.386934 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Thu Apr 08 09:32:33.387928 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Thu Apr 08 09:32:33.388932 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Thu Apr 08 09:32:33.388932 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Thu Apr 08 09:32:33.389926 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Thu Apr 08 09:32:33.390931 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Thu Apr 08 09:32:33.390931 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Thu Apr 08 09:32:33.391925 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Thu Apr 08 09:32:33.391925 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Thu Apr 08 09:32:33.392930 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Thu Apr 08 09:32:33.394915 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Thu Apr 08 09:32:33.395913 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Thu Apr 08 09:32:33.396914 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Thu Apr 08 09:32:33.398913 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Thu Apr 08 09:32:33.401913 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Thu Apr 08 09:32:33.402909 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Thu Apr 08 09:32:33.406916 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Thu Apr 08 09:32:33.426893 2021] [ssl:info] [pid 5468:tid 492] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:32:33.446882 2021] [ssl:warn] [pid 5468:tid 492] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:32:33.449895 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Thu Apr 08 09:32:33.449895 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Thu Apr 08 09:32:33.450898 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Thu Apr 08 09:32:33.450898 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Thu Apr 08 09:32:33.450898 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Thu Apr 08 09:32:33.451894 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Thu Apr 08 09:32:33.451894 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Thu Apr 08 09:32:33.451894 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Thu Apr 08 09:32:33.452888 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Thu Apr 08 09:32:33.452888 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Thu Apr 08 09:32:33.452888 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Thu Apr 08 09:32:33.453888 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Thu Apr 08 09:32:33.453888 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Thu Apr 08 09:32:33.453888 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Thu Apr 08 09:32:33.454877 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Thu Apr 08 09:32:33.454877 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Thu Apr 08 09:32:33.454877 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Thu Apr 08 09:32:33.454877 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Thu Apr 08 09:32:33.455891 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Thu Apr 08 09:32:33.455891 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Thu Apr 08 09:32:33.456885 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Thu Apr 08 09:32:33.456885 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Thu Apr 08 09:32:33.456885 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Thu Apr 08 09:32:33.457885 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Thu Apr 08 09:32:33.457885 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Thu Apr 08 09:32:33.457885 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Thu Apr 08 09:32:33.461873 2021] [so:debug] [pid 5468:tid 492] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Thu Apr 08 09:32:33.469867 2021] [ssl:info] [pid 5468:tid 492] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:32:33.484858 2021] [ssl:warn] [pid 5468:tid 492] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:34:51.152904 2021] [ssl:info] [pid 8496:tid 460] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:34:51.170877 2021] [ssl:warn] [pid 8496:tid 460] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
+[Thu Apr 08 09:34:51.173875 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module actions_module from D:/apache24-VC15-x64/modules/mod_actions.so
+[Thu Apr 08 09:34:51.174874 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module alias_module from D:/apache24-VC15-x64/modules/mod_alias.so
+[Thu Apr 08 09:34:51.174874 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module allowmethods_module from D:/apache24-VC15-x64/modules/mod_allowmethods.so
+[Thu Apr 08 09:34:51.175873 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module asis_module from D:/apache24-VC15-x64/modules/mod_asis.so
+[Thu Apr 08 09:34:51.175873 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module auth_basic_module from D:/apache24-VC15-x64/modules/mod_auth_basic.so
+[Thu Apr 08 09:34:51.175873 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module authn_core_module from D:/apache24-VC15-x64/modules/mod_authn_core.so
+[Thu Apr 08 09:34:51.176872 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module authn_file_module from D:/apache24-VC15-x64/modules/mod_authn_file.so
+[Thu Apr 08 09:34:51.176872 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module authz_core_module from D:/apache24-VC15-x64/modules/mod_authz_core.so
+[Thu Apr 08 09:34:51.177873 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module authz_groupfile_module from D:/apache24-VC15-x64/modules/mod_authz_groupfile.so
+[Thu Apr 08 09:34:51.177873 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module authz_host_module from D:/apache24-VC15-x64/modules/mod_authz_host.so
+[Thu Apr 08 09:34:51.177873 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module authz_user_module from D:/apache24-VC15-x64/modules/mod_authz_user.so
+[Thu Apr 08 09:34:51.178871 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module autoindex_module from D:/apache24-VC15-x64/modules/mod_autoindex.so
+[Thu Apr 08 09:34:51.179872 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module cgi_module from D:/apache24-VC15-x64/modules/mod_cgi.so
+[Thu Apr 08 09:34:51.179872 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module dir_module from D:/apache24-VC15-x64/modules/mod_dir.so
+[Thu Apr 08 09:34:51.180870 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module env_module from D:/apache24-VC15-x64/modules/mod_env.so
+[Thu Apr 08 09:34:51.180870 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module include_module from D:/apache24-VC15-x64/modules/mod_include.so
+[Thu Apr 08 09:34:51.181870 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module info_module from D:/apache24-VC15-x64/modules/mod_info.so
+[Thu Apr 08 09:34:51.181870 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module isapi_module from D:/apache24-VC15-x64/modules/mod_isapi.so
+[Thu Apr 08 09:34:51.182869 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module log_config_module from D:/apache24-VC15-x64/modules/mod_log_config.so
+[Thu Apr 08 09:34:51.182869 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module mime_module from D:/apache24-VC15-x64/modules/mod_mime.so
+[Thu Apr 08 09:34:51.182869 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module negotiation_module from D:/apache24-VC15-x64/modules/mod_negotiation.so
+[Thu Apr 08 09:34:51.183868 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module rewrite_module from D:/apache24-VC15-x64/modules/mod_rewrite.so
+[Thu Apr 08 09:34:51.183868 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module setenvif_module from D:/apache24-VC15-x64/modules/mod_setenvif.so
+[Thu Apr 08 09:34:51.183868 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module socache_shmcb_module from D:/apache24-VC15-x64/modules/mod_socache_shmcb.so
+[Thu Apr 08 09:34:51.184867 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module ssl_module from D:/apache24-VC15-x64/modules/mod_ssl.so
+[Thu Apr 08 09:34:51.184867 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module status_module from D:/apache24-VC15-x64/modules/mod_status.so
+[Thu Apr 08 09:34:51.187866 2021] [so:debug] [pid 8496:tid 460] mod_so.c(266): AH01575: loaded module php7_module from D:/PHP/php-7.2-x64-VC15-TS/php7apache2_4.dll
+[Thu Apr 08 09:34:51.197861 2021] [core:warn] [pid 8496:tid 460] AH00098: pid file D:/apache24-VC15-x64/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Apr 08 09:34:51.198860 2021] [ssl:info] [pid 8496:tid 460] AH01883: Init: Initialized OpenSSL library
+[Thu Apr 08 09:34:51.215851 2021] [ssl:warn] [pid 8496:tid 460] AH01909: localhost:8043:0 server certificate does NOT include an ID which matches the server name
