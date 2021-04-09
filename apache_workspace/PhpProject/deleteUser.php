@@ -6,17 +6,17 @@ require_once __APPDIR__ . '/Database/db.php';
 
 //unset($_SESSION['signin_error']);
 
-$comId = $_POST['comId'];
+$userId = $_SESSION['user']['id'];
 
 
 try {
-    deleteCom($comId);
+    deleteUser($userId);
     header('Location: ./index.php'); 
 }
 catch (Exception $e) {
     error_log($e);
     $_SESSION['signin_error'] = $e->getMessage();
-    header('Location: ./signin.php');
+    header('Location: ./index.php');
 }
 
 ?>

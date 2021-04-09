@@ -86,6 +86,22 @@ function signin(string $name, string $firstname, string $service, string $mail, 
     }
 };
 
+function deleteUser($userId) {
+    try {
+        conn()->beginTransaction();
+        $stmt = conn()->prepare("
+        UPDATE user SET Suppression = NOW()  WHERE id = ?");
+        $stmt->execute([$userId]);
+        conn()->commit();
+        
+    } catch(Exception $e) {
+        if (conn() -> inTransaction()) {
+            conn()->rollBack();
+        }
+        throw $e;
+    }
+}
+
 function postCom($userId, ?string $file, ?string $textarea ) {
     try {
         conn()->beginTransaction();
@@ -121,9 +137,71 @@ function getOneCom($comId) {
     
 } 
 
-function modifyCom() {
-
+function supImg($file, $comId) {
+    try {
+        conn()->beginTransaction();
+        $stmt = conn()->prepare("
+        UPDATE commentaire SET ImgUrl = ? WHERE id = ?");
+        $stmt->execute([ $file, $comId]);
+        conn()->commit();
+        
+    } catch(Exception $e) {
+        if (conn() -> inTransaction()) {
+            conn()->rollBack();
+        }
+        throw $e;
+    }
 };
 
+
+function modifyCom(?string $file, ?string $textarea, $comId) {
+
+    if($file == NULL) {
+        try {
+            conn()->beginTransaction();
+            $stmt = conn()->prepare("
+            UPDATE commentaire SET Text = ?  WHERE id = ?");
+            $stmt->execute([ $textarea, $comId]);
+            conn()->commit();
+            
+        } catch(Exception $e) {
+            if (conn() -> inTransaction()) {
+                conn()->rollBack();
+            }
+            throw $e;
+        }
+    
+    } else {
+        try {
+            conn()->beginTransaction();
+            $stmt = conn()->prepare("
+            UPDATE commentaire SET imgUrl = ?, Text = ?  WHERE id = ?");
+            $stmt->execute([ $file, $textarea, $comId]);
+            conn()->commit();
+            
+        } catch(Exception $e) {
+            if (conn() -> inTransaction()) {
+                conn()->rollBack();
+            }
+            throw $e;
+        }
+    }
+};
+
+function deleteCom($comId) {
+    try {
+        conn()->beginTransaction();
+        $stmt = conn()->prepare("
+        UPDATE commentaire SET Suppression = NOW()  WHERE id = ?");
+        $stmt->execute([$comId]);
+        conn()->commit();
+        
+    } catch(Exception $e) {
+        if (conn() -> inTransaction()) {
+            conn()->rollBack();
+        }
+        throw $e;
+    }
+}
 
 ?>
