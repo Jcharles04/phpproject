@@ -15,13 +15,23 @@ header {
 	background-color: #F8C471 ;
 }
 
-.card {
+.card.level-0 {
 	display: flex;
 	justify-content: space-between;
-	width: 80%; 
+	margin: 20px 5% 5px 5%;
+	width: 90%; 
 	height: 100px;
 	background-color: #f1f07f;
-	margin-bottom: 20px;
+}
+
+.card.level-1 {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 5% 0 15%;
+	width: 80%; 
+	height: 100px;
+	background-color: #bcf17f;
+	margin-bottom: 5px;
 }
 
 .card .userId{

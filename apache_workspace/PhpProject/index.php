@@ -8,7 +8,7 @@ require_once __APPDIR__ . '/Database/db.php';
 require_once __APPDIR__ . '/apputils/Util.php';
 
 if (!$_SESSION["user"]) {
-	header('Location: ./login.php');
+	header('Location: ./log/login.php');
   	exit();
 }
 
@@ -21,15 +21,18 @@ if (!$_SESSION["user"]) {
 <html>
 	<head>
        	<meta charset="utf-8">
-        <link rel="stylesheet" href="./style.css" media="screen" />
+        <link rel="stylesheet" href="<?=Util::CACHE_URL('./assets/style.css') ?>" media="screen" />
     </head>
 	<body>
 	
 		<header>
 			<h1>Hello, <?=htmlspecialchars_decode($_SESSION['user']['Name'])?></h1>
+			<?php if($_SESSION['user']['Moderator'] != 0): ?>
+				<a href='./mod/mod.php' class='link'>Liste des utilisateurs</a>
+			<?php endif ?>
 			<div>
-				<a href='./logout.php' class='link'>Déconnexion</a>
-				<a href='./deleteUser.php' class='link'>Supprimer votre compte</a>
+				<a href='./log/logout.php' class='link'>Déconnexion</a>
+				<a href='./log/deleteUser.php' class='link'>Supprimer votre compte</a>
 			</div>
 		</header>
 		
@@ -45,83 +48,65 @@ if (!$_SESSION["user"]) {
         	</div>
 		</section>
 		<section class='container two'>
-			<div class='commentary'>
-				<?php 
-					try{
-						$conn;
-					} catch(PDOException $e){
-						die('Erreur connexion : '.$e->getMessage());
-					}
-					$comments = $conn->query('SELECT * FROM commentaire WHERE Suppression IS NULL')->fetchAll();
-					$commentsById = [];
-					foreach($comments as $comment){
-						$commentsById[$comment->id] = $comment;
-					}
-					foreach ($comments as $id => $comment) {
-						if($comment->ReplyTo_id != NULL) {
-							$commentsById[$comment->ReplyTo_id]->children[] = $comment;
-							if ($unset_children) {
-								unset($comments[$id]);
-							}
-						}
-					}
-					var_dump($id);
-					var_dump($comments);
-					var_dump($comment);
-					foreach ($comments as $comment) {
-					?>
-						<div class='card'>
-							<div class='comId'><?php echo $comment['id'];?></div>
-							<div class='userId'><?php echo $comment['User_id'];?></div>
-							<div class='date'><?php echo $comment['DateCreation']; ?></div>
-							<?php if ($comment['ImgUrl'] != null): ?>
-								<img src="<?=Util::APP_URL('/upload/', $comment['ImgUrl']) ?>"/>
-							<?php endif; ?>	
-							<div class='text'><?php echo $comment['Text']; ?></div>
-							<div class='like'><?php echo $comment['Like']; ?></div>
-							<div class='reponse'><?php echo $comment['ReplyTo_id']; ?></div>
-							<?php if ($_SESSION['user']['id'] == $comment['User_id']): ?>
-									<form action='./modifyCom.php' method="GET">
-										<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
-										<input class='modify' type='submit' value='Modifier'/>
-									</form>
-									<form action='./deleteCom.php' method="POST">
-										<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
-										<input class='delete' type='submit' value='Delete'/>
-									</form>
-							<?php endif; ?>	
-						</div>
-					<?php
-					}
-					?>
+			<div class='comment'>
+				<?=getAllCom(); ?>
 			</div>
 		</section>
-
-<!-- <?php
-	if (FALSE) {
-?>
-		<div>toto</div>
-<?php
-	} else {
-?>
-		<div>lulu</div>
-<?php
-	}
-	$toto = 'toto qeszfqsdf';
-	ob_start();
-?>
-<div>
-	<p>p1</p>
-	<p>p2</p>
-	<p>p3 <?=$toto?></p>
-</div>
-
-<?php
-$lulu = ob_get_clean();
-
-echo $lulu;
-echo ''
-?> -->
-
 	</body>
 </html>
+
+<?php 
+function renderComment($comment, $level = 0) {
+	$date = new DateTime($comment['CreationDate'])
+?>
+	<div class='card level-<?=$level?>'>
+		<div class='firstName'><?php echo $comment['FirstName'];?></div>
+		<div class='service'><p>Service : </p><?php echo $comment['Service'];?></div>
+		<div class='date'><?php echo date_format($date, '\L\e d-m-Y \à H:i') ; ?></div>
+		<?php if ($comment['ImgUrl'] != null): ?>
+			<img src="<?=Util::APP_URL('/upload/', $comment['ImgUrl']) ?>"/>
+		<?php endif; ?>	
+		<div class='text'><?php echo $comment['Text']; ?></div>
+		<?php if($comment['myLike'] == 0): ?>
+			<form action='./com/like.php' method="POST">
+				<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
+				<input class='like' type='submit' value='Like <?php echo ($comment['likes']); ?>' />
+				<p>Nombre de likes: <?php echo ($comment['likes']); ?><p>
+			</form>
+		<?php else : ?>
+			<form action='./com/unLike.php' method="POST">
+				<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
+				<input class='like' type='submit' value='Vous avez liké'/>
+				<p>Nombre de likes: <?php echo ($comment['likes']); ?><p>
+			</form>
+		<?php endif; ?>	
+		<div class='response'></div>
+		<?php if ($_SESSION['user']['id'] != $comment['User_id'] && $comment['ReplyTo_id'] == NULL): ?>
+				<form action='./com/replyCom.php' method="POST">
+					<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
+					<input class='response' type='submit' value='Répondre'/>
+				</form>
+		<?php endif; ?>	
+		<?php if ($_SESSION['user']['id'] == $comment['User_id']): ?>
+				<form action='./com/modifyCom.php' method="GET">
+					<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
+					<input class='modify' type='submit' value='Modifier'/>
+				</form>
+		<?php endif; ?>	
+		<?php if ($_SESSION['user']['id'] == $comment['User_id'] || $_SESSION['user']['Moderator'] != 0): ?>	
+				<form action='./com/deleteCom.php' method="POST">
+					<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
+					<input class='delete' type='submit' value='Delete'/>
+				</form>
+		<?php endif; ?>
+		</div>
+		<?php if (array_key_exists('replies', $comment) && count($comment['replies'])):?>
+			<div class="replies">
+				<?php foreach($comment['replies'] as $reply) {
+					renderComment($reply, $level + 1);
+				}?>
+			</div>
+		<?php endif; ?>
+<?php
+	}
+?>

@@ -3,7 +3,7 @@ namespace apputils;
 
 use \DateTime;
 
-require_once '__app.php';
+//include './__app.php';
 
 class Util
 {
@@ -143,13 +143,14 @@ class Util
         $time = new DateTime('now');
         $time->setTimestamp($ftime);
         $time = $time->format('YmdHis');
-        //Insert timestamp into file name with syntax -@YYYYMMDDHHmmss@-
-        $add = preg_replace('/(\w)(\.[^\/]*)?$/', '$1-@' . $time . '@-$2', $url);
-        if ($add === null) {
-            error_log(print_r(error_get_last(), TRUE));
-            return $url;
-        }
-        return $add;
+        return Util::setRequestParameter($url, 'nocache-version', $time);
+        // //Insert timestamp into file name with syntax -@YYYYMMDDHHmmss@-
+        // $add = preg_replace('/(\w)(\.[^\/]*)?$/', '$1-@' . $time . '@-$2', $url);
+        // if ($add === null) {
+        //     error_log(print_r(error_get_last(), TRUE));
+        //     return $url;
+        // }
+        // return $add;
     }
     
     /**

@@ -1,8 +1,7 @@
 <?php
+include '../__app.php';
 
-include '__app.php';
-
-require_once __DIR__ . '/Database/db.php';
+require_once __DIR__ . '/../Database/db.php';
 
 unset($_SESSION['signin_error']);
 

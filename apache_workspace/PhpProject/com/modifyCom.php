@@ -2,9 +2,9 @@
 
 use apputils\Util;
 
-include '__app.php';
+include '../__app.php';
 
-require_once __DIR__ . '/Database/db.php';
+require_once __DIR__ . '/../Database/db.php';
 require_once __APPDIR__ . '/apputils/Util.php';
 //unset($_SESSION['login_error']);
 
@@ -16,7 +16,7 @@ $userId = $_SESSION['user']['id'];
 $thisCom = getOneCom($comId);
 if (!$thisCom) { //
     $_SESSION['getOneCom_error'] = "Problême avec ce commentaire !";
-    header('Location: ./index.php');
+    header('Location: ../index.php');
 } else {
     ?>
         <!DOCTYPE html>
@@ -24,7 +24,7 @@ if (!$thisCom) { //
         <html>
             <head>
                 <meta charset="utf-8">
-                <link rel="stylesheet" href="./style.css" media="screen" />
+                <link rel="stylesheet" href="<?=Util::CACHE_URL('./assets/style.css') ?>" media="screen" />
             </head>
             <div id="postCom">
                 <form action="./modifyComVal.php" method="POST" enctype="multipart/form-data">

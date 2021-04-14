@@ -1,14 +1,22 @@
 <?php
 
-include '__app.php';
+use apputils\Util;
 
-require_once __DIR__ . '/Database/db.php';
+include '../__app.php';
 
-//unset($_SESSION['postCom_error']);
+require_once __DIR__ . '/../Database/db.php';
+require_once __APPDIR__ . '/apputils/Util.php';
+//unset($_SESSION['login_error']);
 
-$userId = $_SESSION['user']['id'];
+$comId = $_POST['comId'];
+$isSup = $_POST['delete-image'];
 
-if(isset($_FILES['file'])){
+if($isSup == 1){
+    $file = NULL;
+    supImg($file, $comId);
+    header('Location: ../index.php');
+
+} else if(isset($_FILES['file'])){
     $tmpName = $_FILES['file']['tmp_name'];
     $name = $_FILES['file']['name'];
     $size = $_FILES['file']['size'];
@@ -27,35 +35,34 @@ if(isset($_FILES['file'])){
         //$file = 5f586bf96dcd38.73540086.jpg
         $uploadDir = __DIR__ . '/upload/';
         $uploadfile = $uploadDir . basename($file);
-
         move_uploaded_file($tmpName, './upload/'.$file);
+
     } else {
         $file = NULL;
     }
-    //$file = $_POST['file'];
     $textarea = $_POST['textarea'];
-
     error_log("postCom with $textarea / $file");
 
     if(!empty($file or $textarea)){
 
         try {
-            postCom($userId, $file, $textarea);
+            modifyCom($file, $textarea, $comId);
             echo "Commentaire enregistré";
-            header('Location: ./index.php'); 
+            header('Location: ../index.php'); 
         }
         catch (Exception $e) {
             error_log($e);
-            $_SESSION['postCom_error'] = $e->getMessage();
-            header('Location: ./index.php');
+            $_SESSION['modifyComVal_error'] = $e->getMessage();
+            header('Location: ../index.php');
         }
     } else {
         $_SESSION['postCom_error'] = "Un problême est survenu !";
-            header('Location: ./index.php');
+            header('Location: ../index.php');
     }
 
 } else{
     echo "Une erreur est survenue";
+    header('Location: ../index.php');
 }  
 
 ?>

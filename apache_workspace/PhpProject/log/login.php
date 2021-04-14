@@ -1,5 +1,5 @@
 <?php 
-include '__app.php';
+include '../__app.php';
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@ include '__app.php';
 <html>
     <head>
        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="../assets/style.css" media="screen" type="text/css" />
     </head>
     <body>
         <div id="main">
