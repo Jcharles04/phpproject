@@ -1,5 +1,9 @@
 <?php
 
+/* -------------------------------------------------------------------------- */
+/*                                DB Connexion                                */
+/* -------------------------------------------------------------------------- */
+
 /**
  * @var PDO $conn
  */
@@ -14,6 +18,10 @@ function conn() {
     global $conn;
     return $conn;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                               User Connexion                               */
+/* -------------------------------------------------------------------------- */
 
 /**
  * test dic
@@ -35,7 +43,7 @@ function login(string $userName, string $pw) {
             	`CreationDate`,
             	`Suppression`
         	FROM `groupomania`.`user`
-            WHERE Mail LIKE ?");
+            WHERE Mail LIKE ? ");
         $res = $stmt->execute([$userName]);
         if (!$res) {
             $err = error_get_last();
@@ -93,6 +101,12 @@ function deleteUser($userId) {
         UPDATE user SET Suppression = NOW()  WHERE id = ?");
         $stmt->execute([$userId]);
         conn()->commit();
+
+        conn()->beginTransaction();
+        $stmt = conn()->prepare("
+        UPDATE user SET Moderator = 0  WHERE id = ?");
+        $stmt->execute([$userId]);
+        conn()->commit();
         
     } catch(Exception $e) {
         if (conn() -> inTransaction()) {
@@ -102,9 +116,12 @@ function deleteUser($userId) {
     }
 };
 
+/* -------------------------------------------------------------------------- */
+/*                               User Moderator                               */
+/* -------------------------------------------------------------------------- */
+
 function getAllUser() {
     try{
-        conn();
         $req = conn()->query("SELECT * FROM user");
         while($users = $req->fetch()){
             renderUsers($users);
@@ -115,6 +132,26 @@ function getAllUser() {
     }
 }
 
+function backUser($userId){
+    try {
+        conn()->beginTransaction();
+        $stmt = conn()->prepare("
+        UPDATE user SET Suppression = NULL WHERE id = ?");
+        $stmt->execute([$userId]);
+        conn()->commit();
+        
+    } catch(Exception $e) {
+        if (conn() -> inTransaction()) {
+            conn()->rollBack();
+        }
+        throw $e;
+    }
+};
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Comment Connexion                             */
+/* -------------------------------------------------------------------------- */
 
 function postCom($userId, ?string $file, ?string $textarea ) {
     try {
@@ -135,29 +172,51 @@ function postCom($userId, ?string $file, ?string $textarea ) {
 
 function getAllCom(){
     try{
-        $comments = conn()->query("SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
-            SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, l.UserId, u.FirstName, u.Service FROM comments c
-            LEFT JOIN like_number l ON l.ComId = c.id
-            LEFT JOIN USER u ON u.id= c.User_id
-            WHERE c.Suppression IS NULL AND ReplyTo_id IS NULL
-        ) et
-        GROUP BY et.id
-        ORDER BY CreationDate DESC LIMIT 20");
-        while($comment = $comments->fetch()){
+        $rs = conn()->query("
+            SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
+                SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, c.checkedByAdmin, l.UserId, u.FirstName, u.Service FROM comments c
+                LEFT JOIN like_number l ON l.ComId = c.id
+                LEFT JOIN USER u ON u.id= c.User_id
+                WHERE c.Suppression IS NULL AND ReplyTo_id IS NULL
+            ) et
+            GROUP BY et.id
+            ORDER BY CreationDate DESC");
+        $comments = [];
+        while($comment = $rs->fetch()){
             $comment['replies'] = [];
+            
             $replies = conn()->query("SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
-                SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, l.UserId, u.FirstName, u.Service FROM comments c
+                SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, c.checkedByAdmin, l.UserId, u.FirstName, u.Service FROM comments c
                 LEFT JOIN like_number l ON l.ComId = c.id
                 LEFT JOIN USER u ON u.id= c.User_id
                 WHERE c.Suppression IS NULL AND ReplyTo_id = '{$comment['id']}'
             ) et
             GROUP BY et.id
-            ORDER BY CreationDate DESC");
+            ORDER BY CreationDate DESC LIMIT 0, 5");
             while($reply = $replies->fetch()){
-                $comment['replies'][] = $reply;     
+                $comment['replies'][] = $reply;    
             }
-            renderComment($comment);
+            $comment["NbOfResponse"] = count($comment['replies']);
+            $comments[] = $comment;
         }
+        //Count responses
+        $rs = conn()->query("
+            SELECT c.id, COUNT(r.id) replies
+            FROM comments c
+            LEFT JOIN comments r ON r.ReplyTo_id = c.id AND r.Suppression IS NULL
+            WHERE c.ReplyTo_id IS NULL AND c.Suppression IS NULL
+            GROUP BY c.id
+            ORDER BY c.CreationDate DESC");
+        while($ccount = $rs->fetch()) {
+            $id = $ccount['id'];
+            foreach ($comments as &$comment) {
+                if ($comment["id"] == $id) {
+                    $comment['NbOfResponse'] = $ccount["replies"];
+                    break;
+                }
+            }
+        }
+        return $comments;
     }
     catch(PDOException $e){
         die('Erreur connexion : '.$e->getMessage());
@@ -181,8 +240,45 @@ function getOneCom($comId) {
         }
         throw $e;
     }
-    
-} 
+};
+
+function responsesCom($comId){
+    try {
+        $req = conn()->prepare("
+            SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
+            SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, c.checkedByAdmin, l.UserId, u.FirstName, u.Service FROM comments c
+            LEFT JOIN like_number l ON l.ComId = c.id
+            LEFT JOIN USER u ON u.id= c.User_id
+            WHERE c.Suppression IS NULL AND c.id = '{$comId}'
+            ) et
+            GROUP BY et.id
+            ORDER BY CreationDate DESC"); 
+        $req->execute([$comId]);
+        $comment = $req->fetch();
+        $comment['replies'] = [];
+        $replies = conn()->query(" 
+            SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
+            SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, c.checkedByAdmin, l.UserId, u.FirstName, u.Service FROM comments c
+            LEFT JOIN like_number l ON l.ComId = c.id
+            LEFT JOIN USER u ON u.id= c.User_id
+            WHERE c.Suppression IS NULL AND ReplyTo_id = '{$comId}'
+            ) et
+            GROUP BY et.id
+            ORDER BY CreationDate DESC");
+        while($reply = $replies->fetch()){
+            $comment['replies'][] = $reply;    
+        }
+        return $comment;
+    }
+        
+     catch(Exception $e) {
+        if (conn() -> inTransaction()) {
+            conn()->rollBack();
+        }
+        throw $e;
+    }
+};
+
 
 function supImg($file, $comId) {
     try {
@@ -298,5 +394,47 @@ function dropLike($comId, $userId) {
         throw $e;
     }
 };
+
+/* -------------------------------------------------------------------------- */
+/*                                Com Moderator                               */
+/* -------------------------------------------------------------------------- */
+
+function checkedByAdmin($comId ,$userId) {
+    try {
+        conn()->beginTransaction();
+        $stmt = conn()->prepare("
+        UPDATE comments SET checkedByAdmin = 1 ");
+        $stmt->execute([$comId]);
+        conn()->commit();
+
+        conn()->beginTransaction();
+        $stmt = conn()->prepare("
+        UPDATE user SET ModerationDate = NOW()  WHERE id = ?");
+        $stmt->execute([$userId]);
+        conn()->commit();
+        
+    } catch(Exception $e) {
+        if (conn() -> inTransaction()) {
+            conn()->rollBack();
+        }
+        throw $e;
+    }
+};
+
+function moderationDate() {
+    try {
+        $dates = conn()->query("SELECT * FROM user WHERE user.ModerationDate = 
+        (SELECT MAX(ModerationDate) FROM user)");
+        while($date = $dates->fetch()){
+            checkModeration($date);
+        }
+    
+    } catch(Exception $e) {
+        if (conn() -> inTransaction()) {
+            conn()->rollBack();
+        }
+        throw $e;
+    }
+}
 
 ?>

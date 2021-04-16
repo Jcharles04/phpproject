@@ -25,7 +25,7 @@ if(isset($_FILES['file'])){
         //uniqid génère quelque chose comme ca : 5f586bf96dcd38.73540086
         $file = $uniqueName.".".$extension;
         //$file = 5f586bf96dcd38.73540086.jpg
-        $uploadDir = __DIR__ . '/upload/';
+        $uploadDir = __APPDIR__ . '/upload/';
         $uploadfile = $uploadDir . basename($file);
 
         move_uploaded_file($tmpName, '../upload/'.$file);

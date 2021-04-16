@@ -47,4 +47,32 @@ img {
 	width: 100px;
 }
 
+table {
+	margin: 0 5% 0 5%;
+	border: medium solid #6495ed;
+	border-collapse: collapse;
+	width: 90%;
+	text-align: center;
+}
+
+th {
+
+	border: thin solid #6495ed;
+	width: 10%;
+	padding: 5px;
+	background-color: #D0E3FA;
+
+}
+
+td {
+	
+	border: thin solid #6495ed;
+	width: 10%;
+	padding: 5px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+
+
 

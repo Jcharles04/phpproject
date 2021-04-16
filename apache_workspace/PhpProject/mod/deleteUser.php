@@ -6,7 +6,7 @@ require_once __DIR__ . '/../Database/db.php';
 
 //unset($_SESSION['signin_error']);
 
-$userId = $_SESSION['user']['id'];
+$userId = $_POST['id'];
 
 try {
     deleteUser($userId);
@@ -18,7 +18,7 @@ try {
         header('Location: ../index.php');
         die;
     } else {
-        header('Location: ../index.php'); 
+        header('Location: ./mod.php'); 
     }
         
     

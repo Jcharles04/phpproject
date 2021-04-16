@@ -18,7 +18,8 @@ include '../__app.php';
             	if ($_SESSION['signin_error']) {
             	    ?><div class="messages">
             	    	<p class="error"><?=h($_SESSION['signin_error'])?></p>
-            	    </div><?php
+            	    </div>
+                <?php
             	}
             	?>
             
