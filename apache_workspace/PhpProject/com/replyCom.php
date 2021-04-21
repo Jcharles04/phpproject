@@ -2,7 +2,7 @@
 
 use apputils\Util;
 
-include '../__app.php';
+include_once '__app.php';
 
 require_once __DIR__ . '/../Database/db.php';
 require_once __APPDIR__ . '/apputils/Util.php';

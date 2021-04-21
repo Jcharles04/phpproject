@@ -2,7 +2,7 @@
 
 use apputils\Util;
 
-include '../__app.php';
+include_once '__app.php';
 
 require_once __DIR__ . '/../Database/db.php';
 require_once __APPDIR__ . '/apputils/Util.php';
@@ -10,7 +10,7 @@ require_once __APPDIR__ . '/apputils/Util.php';
 
 $comId = $_POST['comId'];
 $userId = $_SESSION['user']['id'];
-$text = $_POST['textarea'];
+$text = $_POST['text'];
 
 try {
     sendReply($userId, $text, $comId);

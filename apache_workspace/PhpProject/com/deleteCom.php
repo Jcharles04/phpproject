@@ -1,6 +1,6 @@
 <?php
 
-include '__app.php';
+include_once '__app.php';
 require_once __APPDIR__ . '/Database/db.php';
 
 //unset($_SESSION['signin_error']);

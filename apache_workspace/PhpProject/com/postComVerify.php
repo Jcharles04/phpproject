@@ -1,6 +1,6 @@
 <?php
 
-include '../__app.php';
+include_once '__app.php';
 
 require_once __DIR__ . '/../Database/db.php';
 
@@ -33,7 +33,7 @@ if(isset($_FILES['file'])){
         $file = NULL;
     }
     //$file = $_POST['file'];
-    $textarea = $_POST['textarea'];
+    $textarea = $_POST['text'];
 
     error_log("postCom with $textarea / $file");
 

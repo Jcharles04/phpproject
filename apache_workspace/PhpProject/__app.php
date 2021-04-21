@@ -1,9 +1,11 @@
 <?php
 
-define("__APPDIR__", __DIR__);
+if (!defined("__APPDIR__")) {
+    define("__APPDIR__", __DIR__);
 
-session_start();
+    session_start();
 
-function h($str) {
-    return htmlspecialchars($str, ENT_COMPAT | ENT_HTML5 | ENT_QUOTES);
-};
+    function h($str) {
+        return htmlspecialchars($str, ENT_COMPAT | ENT_HTML5 | ENT_QUOTES);
+    };
+}

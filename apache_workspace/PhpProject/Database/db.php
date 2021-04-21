@@ -185,14 +185,15 @@ function getAllCom(){
         while($comment = $rs->fetch()){
             $comment['replies'] = [];
             
-            $replies = conn()->query("SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
+            $replies = conn()->query("
+            SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
                 SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, c.checkedByAdmin, l.UserId, u.FirstName, u.Service FROM comments c
                 LEFT JOIN like_number l ON l.ComId = c.id
                 LEFT JOIN USER u ON u.id= c.User_id
                 WHERE c.Suppression IS NULL AND ReplyTo_id = '{$comment['id']}'
             ) et
             GROUP BY et.id
-            ORDER BY CreationDate DESC LIMIT 0, 5");
+            ORDER BY CreationDate DESC");
             while($reply = $replies->fetch()){
                 $comment['replies'][] = $reply;    
             }

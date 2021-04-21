@@ -1,12 +1,12 @@
 <?php
 
-include '../__app.php';
+include_once '__app.php';
 
 require_once __DIR__ . '/../Database/db.php';
 
 //unset($_SESSION['signin_error']);
 
-$userId = $_POST['id'];
+$userId = $_POST['userId'];
 
 try {
     deleteUser($userId);
