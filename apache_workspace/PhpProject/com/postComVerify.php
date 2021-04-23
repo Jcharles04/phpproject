@@ -32,7 +32,7 @@ if(isset($_FILES['file'])){
     } else {
         $file = NULL;
     }
-    //$file = $_POST['file'];
+
     $textarea = $_POST['text'];
 
     error_log("postCom with $textarea / $file");

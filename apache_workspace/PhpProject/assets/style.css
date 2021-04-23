@@ -54,8 +54,7 @@ button {
 	border-radius:0.4em;
 	box-sizing: border-box;
 	font-weight:300;
-	color:#FFFFFF;
-	background-color:#4eb5f1;
+	color:#302f2f;
 	text-align:center;
 	transition: all 0.2s;
 }
@@ -91,6 +90,14 @@ input.button:hover{
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+/*
+.comment .hidden {
+	display: none;
+}*/
+
+.comment .loader {
+	display: none;
+}
 
 .card{
 	background-color: white;
@@ -113,64 +120,103 @@ input.button:hover{
 
 .replies{
 	margin: 0 0 20px 0;
-
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                    grid                                    */
+/*                                    CARD                                    */
 /* -------------------------------------------------------------------------- */
 
 .head {
-	display : grid;
-	text-align: center;
-	grid-template-columns : repeat(6, 1fr);
-	grid-template-rows: 20px 20px 20px;
-	margin-bottom: 15px;
+	display : flex;
+	flex-direction: row;
+	margin: 0 0 10px 0;
+	padding-top: 5px;
 	border-bottom: 1px solid rgb(198, 219, 240);
 	background-color: rgba(0, 110, 255, 0.281);
+	max-height: 70px;
 }
 
-.one {
-	grid-column: 1;
-  	grid-row: 1;
+.head .zero {
+	width: 75px;
+	height: 75px;
 }
-.two {
-	grid-column: 1;
-	grid-row: 2;
+
+.head .one {
+	flex:1;
 }
-.three {
-	grid-column: 3/5;
-	grid-row: 1;
+
+.head .one .name{
+	font-size: 20px;
 }
-.four {
-	grid-column: 3/5;
-	grid-row: 2;
+
+.head .one .date{
+	font-size: 12px;
 }
-.five {
-	grid-column: 6;
-	grid-row: 3;
+
+.head .two {
+	flex: 1;
 }
-.six {
-	grid-column: 6;
-	grid-row: 1;
-}
-.seven {
-	grid-column: 6;
-	grid-row: 2;
+
+.head .three {
+	flex: 0;
 }
 
 
 .card.level-0 .main {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	min-height: 100px;
 	margin-bottom: 20px;
 }
 
-
-.main .text {
+.main .visible {
 	display: flex;
+	flex-direction: row
+}
+
+.main .visible .text {
 	flex: 1;
+	margin : 0 0 0 15px;
+}
+
+.main .visible .img {
+	text-align:center;
+	margin : auto;
+}
+
+.main .visible .img img{
+	flex: 1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+}
+
+.main .inVisible {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin : 10px 0 -10px 0 ;
+}
+
+
+
+.main .inVisible .text{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main .inVisible .buttonMod{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin : 5px 0 -5px 0 ;
+}
+
+.img-field {
+	display:flex;
 }
 
 .bottom {
@@ -178,39 +224,29 @@ input.button:hover{
 	border-top: 1px solid rgb(198, 219, 240);
 	margin: 5px 0 0 0;
 	text-align: center;
-	display: grid;
-	grid-template-columns : repeat(2, 1fr);
-	grid-template-rows: 20px;
+	display: flex;
 	flex-flow: row nowrap;
-
+	justify-content: space-between;
 }
 
-.ten {
-	grid-column: 1;
-	grid-row: 1;
-}
-.eleven {
-	grid-column: 2;
-	grid-row: 1;
-}
+.bottom button {
+	border: none;
+	
+} 
+
 
 .footer {
-	display: grid;
+	display: flex;
 	text-align: center;
 	background-color: rgba(141, 141, 141, 0.379);
-	grid-template-columns : repeat(2, 1fr);
-	grid-template-rows: 20px;
 	flex-flow: row nowrap;
+	justify-content: space-around;
 }
 
-.twelve {
-	grid-column: 1;
-	grid-row: 1;
-}
-.thirteen {
-	grid-column: 2;
-	grid-row: 1;
-}
+.footer button {
+	border: none;
+} 
+
 
 .card .userId{
 	display: none;
@@ -218,14 +254,6 @@ input.button:hover{
 
 .card .comId{
 	display: none;
-}
-
-img {
-	display: flex;
-	height: 200px;
-	width: auto;
-	text-align: center;
-	margin: 0 50px 0 0;
 }
 
 

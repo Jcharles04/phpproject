@@ -2,26 +2,124 @@
 $(_event => {
     
     $('#button').click(() => {
-        $('#toggle').toggle()
+        $('#toggle').toggle('fast')
     });
    
     
     $('.toggle').click((event) => {
         const tg = $(event.target);
-        tg.closest('.card').find('.show').toggle();
+        tg.closest('.card').find('.show').toggle('fast');
     });
     
-    $(function() {
+   $(function() {
 
         $(".mod").click((event) => {
             event.preventDefault();
 
             const tg = $(event.target);
-            tg.closest('.card').find('.text').attr("contenteditable" , "true");
-            tg.closest('.card').find('.text').css("caret-color", "red");
-            $( '.text' ).focus();
+            const parent = tg.closest('.card');
+            const text = tg.closest('.card').find('.text');
+            if(text.attr("contenteditable") == "false") {
+                text.attr("contenteditable" , "true");
+            } else {
+                text.attr("contenteditable" , "false");
+            }
+            text.css("caret-color", "red");
+            text.focus();
+            parent.find('.inVisible').toggle('fast');
 
         })
+    });
+    
+    $('input[type="file"]').on('change', (e) => {
+        console.log('change file');
+        let newFile = e.currentTarget;
+        if (newFile.files && newFile.files[0]) {
+            $(newFile).next('.img').html(newFile.files[0].name)
+            console.log($(newFile).next('.img').html(newFile.files[0].name))
+            let reader = new FileReader();
+            reader.onload = () => {
+                newFile.closest('.card').children('.main').find('#img').attr('src', e.target.result)
+            }
+            reader.readAsDataURL(newFile.files[0])
+        }
+    });
+
+
+    $(function() {
+
+        $('.submitMod').click((e) => { 
+            e.preventDefault();
+
+            const tg = $(e.target);
+            const imgFrm = tg.closest('form');
+            const card = imgFrm.closest('.card');
+            if (!imgFrm.length) {
+                console.log('NO form for ', tg);
+                return;
+            }
+            let frm = new FormData(imgFrm[0]);
+            frm.append('ajax', true);
+            let text = card.children('.main').find('.text').text();
+            frm.append('text', text);
+
+            let dI = imgFrm.find('#deleteImage').prop('value');
+            frm.append(deleteImage, dI);
+
+            // let id = card.prop('id');
+            // id = id.split('-');
+            // id = (id.length > 1) ? id[1] : null;
+            // if (!id)
+            //     return;
+            // frm.append(comId, id);
+            // console.log(frm);
+
+            $.post({
+                url: './com/modifyComVal.php',
+                data: frm,
+                processData: false,
+                contentType: false,
+            })
+            .done((data, textStatus, jqXHR) => {
+                console.log(data)
+            })
+            .fail((jqXHR, textStatus, errorThrown) => {
+                console.log(textStatus, errorThrown);
+                alert(`Erreur requête ${textStatus}`);
+            })
+            .always(() => {
+
+            });
+        })
+    });
+
+    $(function () {
+
+        $(window).scroll(() => {
+            if(($(window).scrollTop() + $(window).height()) == $(document).height())  {
+
+                let id = $('.comment').find('.level-0:last').prop('id');
+                id = id.split('-');
+                id = (id.length > 1) ? id[1] : null;
+                if (!id)
+                    return;
+
+                $.get('./com/ajax/getNextCom.php', {comId : id})
+                .done((data, textStatus, jqXHR) => {
+                    const elem = $('<div></div>');
+                    elem.html(data);
+                    elem.children().appendTo($('.comment'));
+                })
+                .fail((jqXHR, textStatus, errorThrown) => {
+                    console.log(textStatus, errorThrown);
+                    alert(`Erreur requête ${textStatus}`);
+                })
+                .always(() => {
+    
+                });
+                
+            }
+        });
     });
 
     /*
@@ -66,18 +164,3 @@ $(_event => {
       });*/
   
 });
-
-
-/*
-console.log($(document));
-
-    const toto = $(document.body);
-    console.log(toto);
-    if (toto.length) {
-        console.log("Au moins 1 element dans toto");
-    }
-    console.log($('.comment .card'));
-    $('.comment .card').append($('<div>toto</div>').append('<p>lala</p>'));
-    $('.comment .card').on('click', clickEvent => {
-        alert('click');
-    });*/

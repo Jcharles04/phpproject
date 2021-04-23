@@ -30,8 +30,8 @@ function modCom($thisCom) {
                         <label for="textarea">Que voulez-vous changer ?</label>
                     </div>
                     <div class='two'>
-                        <textarea id="text" name="text" rows="15" cols="33"><?=h($thisCom['Text'])?></textarea>
-                    </div>
+                        <text id="text" name="text" rows="15" cols="33"><?=h($thisCom['Text'])?></text>
+                    </div>  
                 </div>  
             </div>    	
             <input id="delete-image" name="delete-image" type="hidden" value="0"/>

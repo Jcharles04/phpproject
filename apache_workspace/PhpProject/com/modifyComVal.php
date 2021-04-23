@@ -9,7 +9,9 @@ require_once __APPDIR__ . '/apputils/Util.php';
 //unset($_SESSION['login_error']);
 
 $comId = $_POST['comId'];
-$isSup = $_POST['delete-image'];
+$isSup = $_POST['deleteImage'];
+
+$ajax = array_key_exists('ajax', $_POST);
 
 if($isSup == 1){
     $file = NULL;
@@ -35,12 +37,12 @@ if($isSup == 1){
         //$file = 5f586bf96dcd38.73540086.jpg
         $uploadDir = __DIR__ . '/upload/';
         $uploadfile = $uploadDir . basename($file);
-        move_uploaded_file($tmpName, './upload/'.$file);
+        move_uploaded_file($tmpName, '../upload/'.$file);
 
     } else {
         $file = NULL;
     }
-    $textarea = $_POST['textarea'];
+    $textarea = $_POST['text'];
     error_log("postCom with $textarea / $file");
 
     if(!empty($file or $textarea)){
@@ -48,7 +50,14 @@ if($isSup == 1){
         try {
             modifyCom($file, $textarea, $comId);
             echo "Commentaire enregistré";
-            header('Location: ../index.php'); 
+            if ($ajax) {
+                $modCom = getOneCom($comId);
+                ?>
+                    
+                <?php
+            } else {
+                header('Location: ../index.php'); 
+            }
         }
         catch (Exception $e) {
             error_log($e);
