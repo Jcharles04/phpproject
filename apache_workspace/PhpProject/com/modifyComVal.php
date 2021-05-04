@@ -4,6 +4,7 @@ use apputils\Util;
 
 include_once '__app.php';
 
+require_once __DIR__ . './component/rendercom.php';
 require_once __DIR__ . '/../Database/db.php';
 require_once __APPDIR__ . '/apputils/Util.php';
 //unset($_SESSION['login_error']);
@@ -49,12 +50,10 @@ if($isSup == 1){
 
         try {
             modifyCom($file, $textarea, $comId);
-            echo "Commentaire enregistré";
             if ($ajax) {
-                $modCom = getOneCom($comId);
-                ?>
-                    
-                <?php
+                $comment = modifyThisCom($comId);
+                renderComment($comment);
+                
             } else {
                 header('Location: ../index.php'); 
             }

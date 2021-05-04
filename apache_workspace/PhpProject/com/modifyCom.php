@@ -13,9 +13,12 @@ $comId = $_GET['comId'];
 $userId = $_SESSION['user']['id'];
 
 
-
 $thisCom = getOneCom($comId);
-if (!$thisCom) { //
+if ($_SESSION['user']['Moderator'] == 0 && $_SESSION['user']['id'] != $thisCom['User_id']) {
+    $_SESSION['getOneCom_error'] = "Problême avec ce commentaire !";
+    header('Location: ../index.php');
+
+} elseif (!$thisCom) { 
     $_SESSION['getOneCom_error'] = "Problême avec ce commentaire !";
     header('Location: ../index.php');
 } else {

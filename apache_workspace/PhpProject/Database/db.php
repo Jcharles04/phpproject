@@ -224,6 +224,59 @@ function getAllCom(){
     }
 }
 
+function modifyThisCom($comId) {
+    try{
+        $rs = conn()->query("
+            SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
+                SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, c.checkedByAdmin, l.UserId, u.FirstName, u.Service FROM comments c
+                LEFT JOIN like_number l ON l.ComId = c.id
+                LEFT JOIN USER u ON u.id= c.User_id
+                WHERE c.Suppression IS NULL AND ReplyTo_id IS NULL AND c.id = {$comId}
+            ) et
+            ");
+        while($comment = $rs->fetch()){
+            $comment['replies'] = [];
+            
+            $replies = conn()->query("
+            SELECT et.*, COUNT(UserId) likes, MAX(UserId = '{$_SESSION['user']['id']}' ) AS myLike FROM (
+                SELECT c.id, c.User_id, c.CreationDate, c.ImgUrl, c.Text, c.Suppression, c.ReplyTo_id, c.checkedByAdmin, l.UserId, u.FirstName, u.Service FROM comments c
+                LEFT JOIN like_number l ON l.ComId = c.id
+                LEFT JOIN USER u ON u.id= c.User_id
+                WHERE c.Suppression IS NULL AND ReplyTo_id = '{$comment['id']}'
+            ) et
+            GROUP BY et.id
+            ORDER BY CreationDate DESC");
+            while($reply = $replies->fetch()){
+                $comment['replies'][] = $reply;    
+            }
+            $comment["NbOfResponse"] = count($comment['replies']);
+            $comments[] = $comment;
+        }
+        //Count responses
+        $rs = conn()->query("
+            SELECT c.id, COUNT(r.id) replies
+            FROM comments c
+            LEFT JOIN comments r ON r.ReplyTo_id = c.id AND r.Suppression IS NULL
+            WHERE c.ReplyTo_id IS NULL AND c.Suppression IS NULL
+            GROUP BY c.id
+            ORDER BY c.CreationDate DESC");
+        while($ccount = $rs->fetch()) {
+            $id = $ccount['id'];
+            foreach ($comments as &$comment) {
+                if ($comment["id"] == $id) {
+                    $comment['NbOfResponse'] = $ccount["replies"];
+                    break;
+                }
+            }
+        }
+        return $comment;
+    }
+    catch(PDOException $e){
+        die('Erreur connexion : '.$e->getMessage());
+    }
+};
+
+
 function getNextCom($comId) {
     try{
         $rs = conn()->query("

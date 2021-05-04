@@ -16,12 +16,12 @@ function renderComment($comment, $level = 0) {
                 </div>
 
                 <div class='one'>
-                    <div class='name'><?php echo $comment['FirstName']?></div>
+                    <div class='name'><?= $comment['FirstName']?></div>
                     <div class='date'><?php echo date_format($date, 'd-m, H:i')?></div>
                 </div>
 
                 <div class='two'>
-                    <div class='service'>Service : </p></div>
+                    <div class='service'>Service :</div>
                     <div class='descService '><?php echo $comment['Service'];?></div>
                 </div>
 
@@ -32,9 +32,11 @@ function renderComment($comment, $level = 0) {
                                 <button class='button' type='submit' value='Modifier'><i class="fas fa-ellipsis-h"></i></button>
                             </form>
                     <?php endif; ?>	
+
                     <?php if ($_SESSION['user']['id'] == $comment['User_id'] || $_SESSION['user']['Moderator'] == 1): ?>	
                             <form class='del' action='./com/deleteCom.php' method="POST">
                                 <input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
+                                <input id="UserId" name="UserId" type="hidden" value="<?=$comment['User_id']?>">
                                 <button class='button' type='submit' value='Delete'><i class="fas fa-trash-alt"></i></button>
                             </form>
                     <?php endif; ?>
@@ -73,7 +75,7 @@ function renderComment($comment, $level = 0) {
                         <input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>"/>
                     <div class='six'>
                         <label for="file">Changer d'image ?</label>
-                        <input type="file" name="file" id='file'/>
+                        <input type="file" name="file" class='upload'/>
                     </div>
                     <div class='seven'>
                         <button type="submit" id="submit" class='submitMod' value="Envoyer">Valider</button>
@@ -96,12 +98,12 @@ function renderComment($comment, $level = 0) {
 		<?php if($comment['myLike'] == 0): ?>
 				<form class='like twelve' action='./com/like.php' method="POST">
 					<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
-					<button  class='button' type='submit' value='<?php $comment['likes']?>'>J'aime</button>
+					<button  class='button submitLike' type='submit' value='<?php $comment['likes']?>'>J'aime</button>
 				</form>
 			<?php else : ?>
 				<form class='like twelve' action='./com/unLike.php' method="POST">
 					<input id="comId" name="comId" type="hidden" value="<?=$comment['id']?>">
-					<button class='button' type='submit' value='Vous avez liké'>J'ai liké</button>
+					<button class='button submitDisLike' type='submit' value='Vous avez liké'>J'ai liké</button>
 				</form>
 			<?php endif; ?>
 			<?php if ($comment['ReplyTo_id'] == NULL):?>
@@ -118,9 +120,9 @@ function renderComment($comment, $level = 0) {
 					</form>
 				</div>
 			<?php endif; ?>
-			<?php if (array_key_exists('replies', $comment) && count($comment['replies'])):?>
+			<?php if (array_key_exists("replies", $comment) && count($comment["replies"])):?>
 				<div class="replies">
-					<?php foreach($comment['replies'] as $reply) {
+					<?php foreach($comment["replies"] as $reply) {
 						renderComment($reply, $level + 1);
 					}?>
 				</div>

@@ -7,7 +7,13 @@ include_once '__app.php';;
 require_once __APPDIR__ . '/Database/db.php';
 require_once __APPDIR__ . '/apputils/Util.php';
 
-if ($_SESSION["user"]['Moderator'] == 0) {
+
+
+if (!$_SESSION["user"]) {
+	header('Location: ./log/login.php');
+  	exit();
+      
+} elseif ($_SESSION["user"]['Moderator'] == 0) {
 	header('Location: ../index.php');
   	exit();
 }
@@ -28,8 +34,8 @@ if ($_SESSION["user"]['Moderator'] == 0) {
                 <a href="../index.php" class='link'>Acceuil</a>
                 <h3>Hello, <?=h($_SESSION['user']['Name']) ?></h3>
                 <div>
-                    <a href='./log/logout.php' class='link'>Déconnexion</a>
-                    <a href='./log/deleteUser.php' class='link'>Supprimer votre compte</a>
+                    <a href='../log/logout.php' class='link'>Déconnexion</a>
+                    <a href='../log/deleteUser.php' class='link'>Supprimer votre compte</a>
                 </div>
 		    </header>
         

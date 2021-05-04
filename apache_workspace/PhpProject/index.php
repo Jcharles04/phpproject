@@ -54,7 +54,8 @@ if (!$_SESSION["user"]) {
 						<label for="name"></label>
 						<input type="text" id="text" name="text"  minlength="0" maxlength="250" size="25" placeholder="Racontez nous votre journée...">
 						<label for="file">Une image à partager?</label>
-						<input type="file" name="file">
+						<input type="file" name="file" class='upload'>
+						<img id="previewImg" src="">
 						<button type="submit" id="submit" class='button' value="Envoyer">Envoyez</button>
 					</form>
 				</div>
