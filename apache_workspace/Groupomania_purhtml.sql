@@ -1,6 +1,6 @@
 /*
-SQLyog Community v13.1.7 (64 bit)
-MySQL - 8.0.23 : Database - groupomania
+SQLyog Trial v13.1.8 (64 bit)
+MySQL - 8.0.24 : Database - groupomania
 *********************************************************************
 */
 
@@ -12,7 +12,7 @@ MySQL - 8.0.23 : Database - groupomania
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`groupomania` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`groupomania` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `groupomania`;
 
@@ -34,7 +34,7 @@ CREATE TABLE `comments` (
   KEY `fk_Commentaire_Commentaire1_idx` (`ReplyTo_id`),
   CONSTRAINT `fk_Commentaire_Commentaire1` FOREIGN KEY (`ReplyTo_id`) REFERENCES `comments` (`id`),
   CONSTRAINT `fk_Commentaire_User` FOREIGN KEY (`User_id`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8mb3;
 
 /*Data for the table `comments` */
 
@@ -62,7 +62,7 @@ insert  into `comments`(`id`,`User_id`,`CreationDate`,`ImgUrl`,`Text`,`Suppressi
 (93,51,'2021-04-16 16:16:40',NULL,'bla',NULL,77,1),
 (96,51,'2021-04-21 09:49:59',NULL,NULL,NULL,84,1),
 (97,51,'2021-04-21 09:50:06',NULL,'Super!',NULL,87,1),
-(98,51,'2021-04-21 11:10:49',NULL,'Super!',NULL,91,1),
+(98,51,'2021-04-21 11:10:49',NULL,'Super!',NULL,139,1),
 (99,51,'2021-04-21 17:44:59','608124288df8f1.06516058.png',NULL,'2021-04-22 09:23:07',NULL,1),
 (100,51,'2021-04-22 09:23:12','6081246b127352.11993603.png','Super!','2021-04-22 11:58:50',NULL,1),
 (101,51,'2021-04-22 11:59:01','608148e5c05d45.43040245.png','Super!','2021-04-22 14:34:39',NULL,1),
@@ -77,7 +77,13 @@ insert  into `comments`(`id`,`User_id`,`CreationDate`,`ImgUrl`,`Text`,`Suppressi
 (110,51,'2021-04-29 10:28:59',NULL,'Super!',NULL,141,NULL),
 (139,56,'2021-04-30 11:44:39','http://localhost:8080/images/2CV-Special-jaune-cedrat-2.jpg1619783076025.jpg','',NULL,NULL,NULL),
 (140,56,'2021-04-30 11:48:01','http://localhost:8080/images/Cap-Vert-1.jpg1619783278907.jpg','Super!',NULL,NULL,NULL),
-(141,56,'2021-04-30 11:48:46','http://localhost:8080/images/Cap-Vert-1.jpg1619783324714.jpg','',NULL,NULL,NULL);
+(141,56,'2021-04-30 11:48:46','http://localhost:8080/images/Cap-Vert-1.jpg1619783324714.jpg','',NULL,NULL,NULL),
+(150,56,'2021-05-10 08:45:08',NULL,'cc','2021-05-10 09:39:58',141,NULL),
+(151,56,'2021-05-10 14:26:50','http://localhost:8080/images/téléchargement_(2).jpg1620656798819.jpg','Youpi','2021-05-10 14:27:08',NULL,NULL),
+(152,56,'2021-05-10 14:40:07','http://localhost:8080/images/images.jpg1620657554381.jpg','','2021-05-10 14:45:59',NULL,NULL),
+(153,56,'2021-05-10 14:45:48','','Youpi','2021-05-10 14:46:03',NULL,NULL),
+(154,56,'2021-05-10 14:46:20','http://localhost:8080/images/images.jpg1620657972210.jpg','','2021-05-10 14:46:30',NULL,NULL),
+(155,56,'2021-05-11 18:55:00','','','2021-05-11 18:55:37',NULL,NULL);
 
 /*Table structure for table `like_number` */
 
@@ -99,14 +105,15 @@ insert  into `like_number`(`ComId`,`UserId`) values
 (57,50),
 (77,50),
 (82,52),
-(86,52);
+(86,52),
+(141,56);
 
 /*Table structure for table `parameters` */
 
 DROP TABLE IF EXISTS `parameters`;
 
 CREATE TABLE `parameters` (
-  `param_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `param_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `param_value` json DEFAULT NULL,
   PRIMARY KEY (`param_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -132,7 +139,7 @@ CREATE TABLE `user` (
   `CreationDate` datetime DEFAULT CURRENT_TIMESTAMP,
   `Suppression` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb3;
 
 /*Data for the table `user` */
 
@@ -143,10 +150,10 @@ insert  into `user`(`id`,`Name`,`FirstName`,`Service`,`Mail`,`PassWord`,`Moderat
 (43,'Charles','Julien','Comptabilité','j.charles031290@gmail.com','a',0,NULL,'2021-04-01 15:19:02',NULL),
 (44,'aaa','Pierre','Administration','tata@yoyo.com','a',0,NULL,'2021-04-01 15:22:23',NULL),
 (50,'aaa','Paul','Maintenance','a@a','$2y$10$DnkoihcUdm.hOb9Y2Rw2Je4LWAlvbc9eLpXTtvblSp0V8O7M6Qfc.',0,NULL,'2021-04-01 16:12:24',NULL),
-(51,'Charles','Julien','Stagiaire','toto@tata.com','$2y$10$lUbMbjuen86dq7fxGLQbnOGkt0mF25WlWjW5zy0gsE/Jpb17JgdVW',1,'2021-04-23 16:12:34','2021-04-14 14:18:28',NULL),
+(51,'Charles','Alfred','Manager','toto@tata.com','$2y$10$lUbMbjuen86dq7fxGLQbnOGkt0mF25WlWjW5zy0gsE/Jpb17JgdVW',1,'2021-04-23 16:12:34','2021-04-14 14:18:28',NULL),
 (52,'GIBAND','Julien','Direction','julien.giband@ahpc-services.com','$2y$10$X8mz.dH4YDH3EuBYicXtFuMTADtOkjISUe8j/UAUeBDuhFuW5MkhG',0,NULL,'2021-04-15 15:12:56','2021-04-20 14:34:44'),
 (55,'bbb','bbb','Comptabilité','b@b','$2y$10$GqhPAguPiqSmk5r1jlZmfe7ldZk.826tPSkqewAQ4xDdZ2H2GGwmm',0,NULL,'2021-04-15 15:51:18','2021-04-15 15:56:57'),
-(56,'Charles','Julien','Stagiaire','toto@toto.com','$2b$10$4Sqfor38FGNoF7gTcK2lNePwURJk8yUl/b7xdpd2QGxFRsCQYgvVS',0,NULL,'2021-04-27 07:33:36',NULL);
+(56,'Charles','Julien','Stagiaire','toto@toto.com','$2b$10$4Sqfor38FGNoF7gTcK2lNePwURJk8yUl/b7xdpd2QGxFRsCQYgvVS',1,NULL,'2021-04-27 07:33:36',NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
